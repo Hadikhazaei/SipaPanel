@@ -38,9 +38,8 @@ namespace ZyPanel.Areas.Production.Pages.ToDo {
         public async Task OnGetAsync (int p = 1) {
             var username = HttpContext.User.Identity.GetUserName ();;
             var user = await _userManager.FindByNameAsync (username);
-            var isCo = await _userManager.IsInRoleAsync (user, nameof (RoleType.CoRole));
-            var isPManager = await _userManager.IsInRoleAsync (user, nameof (RoleType.ProductionManagerRole));
-            Expression<Func<TblPlanning, bool>> condition = x => isCo || isPManager ? true : x.TblHallId == user.TblHallId;
+            var isClerk = await _userManager.IsInRoleAsync (user, nameof (RoleType.ProductionClerkRole));
+            Expression<Func<TblPlanning, bool>> condition = x => !isClerk ? true : x.TblHallId == user.TblHallId;
             var entity = _dbSet
                 .Where (condition).AsNoTracking ()
                 .Include (x => x.TblHall).Include (x => x.TblProductionInfo)

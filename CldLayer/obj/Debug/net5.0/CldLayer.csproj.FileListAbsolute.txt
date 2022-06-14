@@ -46,3 +46,15 @@ C:\Users\eshams\Desktop\Hadi\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.csproj.C
 C:\Users\eshams\Desktop\Hadi\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.dll
 C:\Users\eshams\Desktop\Hadi\SaipaCo\CldLayer\obj\Debug\net5.0\ref\CldLayer.dll
 C:\Users\eshams\Desktop\Hadi\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.pdb
+E:\Website\SaipaCo\CldLayer\bin\Debug\net5.0\CldLayer.deps.json
+E:\Website\SaipaCo\CldLayer\bin\Debug\net5.0\CldLayer.dll
+E:\Website\SaipaCo\CldLayer\bin\Debug\net5.0\ref\CldLayer.dll
+E:\Website\SaipaCo\CldLayer\bin\Debug\net5.0\CldLayer.pdb
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.csproj.AssemblyReference.cache
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.AssemblyInfoInputs.cache
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.AssemblyInfo.cs
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.csproj.CoreCompileInputs.cache
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.dll
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\ref\CldLayer.dll
+E:\Website\SaipaCo\CldLayer\obj\Debug\net5.0\CldLayer.pdb

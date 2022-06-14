@@ -1,0 +1,116 @@
+﻿@page
+@model ZyPanel.Areas.Reports.Pages.Reports.PrPlanningReportModel
+@{
+    var title = "برنامه - تولید - (به تفکیک خط)";
+    ViewBag.Title = title;
+}
+<div class="card my-3">
+    <div class="card-header">
+        @title
+    </div>
+    <div class="card-body">
+        <form asp-page="" method="get">
+            <div class="row">
+                <div class="col-3 entry-date">
+                    <div data-picker>
+                        <label for="date" class="col-form-label"></label>
+                        <div class="col" data-date>
+                            <input type="text" value='@Request.Query["date"]' name="date" class="form-control" readonly>
+                            <button type="button" data-trigger>
+                                <i class="bi select-date"></i>
+                                <i class="bi reset-date"></i>
+                            </button>
+                        </div>
+                        <div data-container></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-dark">جستجو</button>
+                </div>
+            </div>
+        </form>
+        <div class="container my-3">
+            <div class="row align-items-start">
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <div class="col-5">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-around">
+                                        <b>@item.HallTitle</b>
+                                    </div>
+                                </div>
+                                <div class="card-body table-container">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <caption class="table-caption table-caption-sm">تمامی واحد ها به تن می
+                                                باشد.</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>زمان</th>
+                                                    <th>برنامه</th>
+                                                    <th>تولید</th>
+                                                    <th>انحراف</th>
+                                                    <th>شروع</th>
+                                                    <th>پایان</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>امروز</td>
+                                                    <td>@item.Daily.PlanningValue</td>
+                                                    <td>@item.Daily.ProductionValue</td>
+                                                    <td class="ltr">@item.Daily.DifferentValue</td>
+                                                    <td colspan="2">@item.Daily.BeginDate</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>هفته</td>
+                                                    <td>@item.WeekLy.PlanningValue</td>
+                                                    <td>@item.WeekLy.ProductionValue</td>
+                                                    <td class="ltr">@item.WeekLy.DifferentValue</td>
+                                                    <td>@item.WeekLy.BeginDate</td>
+                                                    <td>@item.WeekLy.FinishDate</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ماه</td>
+                                                    <td>@item.MonthLy.PlanningValue</td>
+                                                    <td>@item.MonthLy.ProductionValue</td>
+                                                    <td class="ltr">@item.MonthLy.DifferentValue</td>
+                                                    <td>@item.MonthLy.BeginDate</td>
+                                                    <td>@item.MonthLy.FinishDate</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>سال</td>
+                                                    <td>@item.YearLy.PlanningValue</td>
+                                                    <td>@item.YearLy.ProductionValue</td>
+                                                    <td class="ltr">@item.YearLy.DifferentValue</td>
+                                                    <td>@item.YearLy.BeginDate</td>
+                                                    <td>@item.YearLy.FinishDate</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-center my-5">
+                        <h1 class="display-4">Welcome :)</h1>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+<script>
+    datePicker(document.querySelector(".entry-date"));
+</script>
+}

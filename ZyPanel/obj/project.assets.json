@@ -8706,11 +8706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\ZyPanel\\ZyPanel.csproj",
+      "projectUniqueName": "E:\\Website\\SaipaCo\\ZyPanel\\ZyPanel.csproj",
       "projectName": "ZyPanel",
-      "projectPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\ZyPanel\\ZyPanel.csproj",
+      "projectPath": "E:\\Website\\SaipaCo\\ZyPanel\\ZyPanel.csproj",
       "packagesPath": "C:\\Users\\A V V A L Pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\ZyPanel\\obj\\",
+      "outputPath": "E:\\Website\\SaipaCo\\ZyPanel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A V V A L Pc\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8725,8 +8725,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\DbLayer\\DbLayer.csproj": {
-              "projectPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\DbLayer\\DbLayer.csproj"
+            "E:\\Website\\SaipaCo\\DbLayer\\DbLayer.csproj": {
+              "projectPath": "E:\\Website\\SaipaCo\\DbLayer\\DbLayer.csproj"
             }
           }
         }

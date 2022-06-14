@@ -1,0 +1,91 @@
+﻿@page "{id}"
+@model ZyPanel.Areas.BaseInfo.Pages.Template.WeightModel
+@{
+    ViewBag.Title = "وزن قالب ها";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن وزن و زمان سنجی" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <caption class="table-caption">@Model.TemplateInfo</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>وضعیت</th>
+                    <th>کد وزن کشی</th>
+                    <th>تاریخ وزن کشی</th>
+                    <th>دفعه</th>
+                    <th>وزن خوشه (kg)</th>
+                    <th>قطعه</th>
+                    <th>وزن هر قطعه (kg)</th>
+                    <th>تعداد قطعه</th>
+                    <th>سیکل تولید (s)</th>
+                    <th>زمان بارریزی دستی (s)</th>
+                    <th>زمان بارریزی پورینگ (s)</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    int index = 0;
+                    var rowSpan = Model.List
+                    .Select(x => x.ProductId).Distinct().Count();
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td data-active="@item.IsReady"></td>
+                            <td>@item.WeightCode</td>
+                            <td data-null>@item.WeightDate</td>
+                            <td>@item.Time</td>
+                            <td>@item.TemplateWeight</td>
+                            <td>@item.Product</td>
+                            <td>@item.ProductWeight</td>
+                            <td>@item.ProductCount</td>
+                            <td>@item.ProductionCycle</td>
+                            <td>@item.ManualFusionTime</td>
+                            <td>@item.PoringFusionTime</td>
+                            @if (index % rowSpan == 0)
+                            {
+                                <td data-change rowspan="@rowSpan">
+                                    <div>
+                                        <form onsubmit="return confirm('آیا از حذف وزن های با کد @item.WeightCode مطمعن هستید؟')"
+                                asp-page-handler="remove">
+                                            <input type="hidden" value="@item.Time" name="time">
+                                            <button type="submit" data-trash>
+                                                <i class="bi"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                                index++;
+                            }
+                            else { index++; }
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+<script>
+    setModalLG();
+</script>
+}

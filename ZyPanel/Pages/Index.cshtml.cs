@@ -25,7 +25,7 @@ namespace ZyPanel.Pages {
 
         public IActionResult OnGet () {
             // if (_signInManager.IsSignedIn (User)) {
-            //     return RedirectToPage ("Index", new { area = "Co" });
+            //     return RedirectToPage ("Index", new { area = "Reports" });
             // }
             return Page ();
         }
@@ -69,7 +69,7 @@ namespace ZyPanel.Pages {
                     switch (roles[0]) {
                         case nameof (RoleType.CoRole):
                             {
-                                redirectUrl = "/Co";
+                                redirectUrl = "/Reports";
                                 break;
                             }
                         case nameof (RoleType.PlanningRole):

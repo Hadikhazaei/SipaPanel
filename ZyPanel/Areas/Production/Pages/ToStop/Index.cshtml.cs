@@ -105,11 +105,10 @@ namespace ZyPanel.Areas.Production.Pages.ToStop {
             }
             var username = HttpContext.User.Identity.GetUserName ();;
             var user = await _userManager.FindByNameAsync (username);
-            var isCo = await _userManager.IsInRoleAsync (user, nameof (RoleType.CoRole));
-            var isPManager = await _userManager.IsInRoleAsync (user, nameof (RoleType.ProductionManagerRole));
+            var isClerk = await _userManager.IsInRoleAsync (user, nameof (RoleType.ProductionClerkRole));
             var planningInfo = await _context.TblPlanning
                 .Include (x => x.TblHall).SingleAsync (x => x.Id == Id);
-            if (!isCo && !isPManager && user.TblHallId != planningInfo.TblHallId) {
+            if (isClerk && user.TblHallId != planningInfo.TblHallId) {
                 return Forbid ();
             }
             List = await PaginatedList<ListModel>.CreateAsync (

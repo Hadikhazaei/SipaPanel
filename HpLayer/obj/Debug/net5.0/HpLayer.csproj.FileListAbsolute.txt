@@ -46,3 +46,15 @@ C:\Users\eshams\Desktop\Hadi\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.csproj.Cor
 C:\Users\eshams\Desktop\Hadi\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.dll
 C:\Users\eshams\Desktop\Hadi\SaipaCo\HpLayer\obj\Debug\net5.0\ref\HpLayer.dll
 C:\Users\eshams\Desktop\Hadi\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.pdb
+E:\Website\SaipaCo\HpLayer\bin\Debug\net5.0\HpLayer.deps.json
+E:\Website\SaipaCo\HpLayer\bin\Debug\net5.0\HpLayer.dll
+E:\Website\SaipaCo\HpLayer\bin\Debug\net5.0\ref\HpLayer.dll
+E:\Website\SaipaCo\HpLayer\bin\Debug\net5.0\HpLayer.pdb
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.csproj.AssemblyReference.cache
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.AssemblyInfoInputs.cache
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.AssemblyInfo.cs
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.csproj.CoreCompileInputs.cache
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.dll
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\ref\HpLayer.dll
+E:\Website\SaipaCo\HpLayer\obj\Debug\net5.0\HpLayer.pdb

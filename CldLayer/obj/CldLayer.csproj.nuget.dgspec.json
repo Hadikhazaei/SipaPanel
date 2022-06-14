@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\CldLayer\\CldLayer.csproj": {}
+    "E:\\Website\\SaipaCo\\CldLayer\\CldLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\CldLayer\\CldLayer.csproj": {
+    "E:\\Website\\SaipaCo\\CldLayer\\CldLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\CldLayer\\CldLayer.csproj",
+        "projectUniqueName": "E:\\Website\\SaipaCo\\CldLayer\\CldLayer.csproj",
         "projectName": "CldLayer",
-        "projectPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\CldLayer\\CldLayer.csproj",
+        "projectPath": "E:\\Website\\SaipaCo\\CldLayer\\CldLayer.csproj",
         "packagesPath": "C:\\Users\\A V V A L Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\CldLayer\\obj\\",
+        "outputPath": "E:\\Website\\SaipaCo\\CldLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A V V A L Pc\\AppData\\Roaming\\NuGet\\NuGet.Config"

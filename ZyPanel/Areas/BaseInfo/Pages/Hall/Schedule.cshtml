@@ -1,0 +1,46 @@
+﻿@page "{id}"
+@model ZyPanel.Areas.BaseInfo.Pages.Hall.ScheduleModel
+@{
+    ViewBag.Title = "اهداف زمانی خط";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container my-3">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن اهداف زمانی" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <caption class="table-caption">@Model.HallInfo</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>سال</th>
+                    <th>زمان</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Year</td>
+                            <td>@item.Interval</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

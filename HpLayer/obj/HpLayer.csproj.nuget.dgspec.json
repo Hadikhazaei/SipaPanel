@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\HpLayer\\HpLayer.csproj": {}
+    "E:\\Website\\SaipaCo\\HpLayer\\HpLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\HpLayer\\HpLayer.csproj": {
+    "E:\\Website\\SaipaCo\\HpLayer\\HpLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\HpLayer\\HpLayer.csproj",
+        "projectUniqueName": "E:\\Website\\SaipaCo\\HpLayer\\HpLayer.csproj",
         "projectName": "HpLayer",
-        "projectPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\HpLayer\\HpLayer.csproj",
+        "projectPath": "E:\\Website\\SaipaCo\\HpLayer\\HpLayer.csproj",
         "packagesPath": "C:\\Users\\A V V A L Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A V V A L Pc\\Desktop\\SaipaCo\\HpLayer\\obj\\",
+        "outputPath": "E:\\Website\\SaipaCo\\HpLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\A V V A L Pc\\AppData\\Roaming\\NuGet\\NuGet.Config"

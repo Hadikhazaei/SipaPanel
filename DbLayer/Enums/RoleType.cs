@@ -23,7 +23,10 @@ namespace DbLayer.Enums {
         CoPolicy = 1,
 
         [Display (Name = "تولید")]
-        ProductionPolicy = 3,
+        ProductionManagerPolicy = 3,
+
+        [Display (Name = "اپراتور تولید")]
+        ProductionClerkPolicy = 4,
 
         [Display (Name = "کنترل کیفی")]
         QControlPolicy = 5,

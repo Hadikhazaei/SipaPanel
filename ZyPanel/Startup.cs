@@ -45,13 +45,20 @@ namespace ZyPanel {
                         nameof (RoleType.CoRole),
                         nameof (RoleType.PlanningRole));
                 });
-                options.AddPolicy (nameof (PolicyType.ProductionPolicy), policy => {
+                options.AddPolicy (nameof (PolicyType.ProductionManagerPolicy), policy => {
+                    policy.RequireRole (
+                        nameof (RoleType.CoRole),
+                        nameof (RoleType.PlanningRole),
+                        nameof (RoleType.ProductionManagerRole));
+                });
+                options.AddPolicy (nameof (PolicyType.ProductionClerkPolicy), policy => {
                     policy.RequireRole (
                         nameof (RoleType.CoRole),
                         nameof (RoleType.PlanningRole),
                         nameof (RoleType.ProductionManagerRole),
                         nameof (RoleType.ProductionClerkRole));
                 });
+
                 options.AddPolicy (nameof (PolicyType.QControlPolicy), policy => {
                     policy.RequireRole (
                         nameof (RoleType.CoRole),
@@ -63,11 +70,11 @@ namespace ZyPanel {
             // razor page
             services.AddRazorPages (options => {
                 // 
-                options.Conventions.AuthorizeAreaFolder ("Co", "/", nameof (PolicyType.CoPolicy));
-                // 
+                options.Conventions.AuthorizeAreaFolder ("BaseInfo", "/", nameof (PolicyType.CoPolicy));
                 options.Conventions.AuthorizeAreaFolder ("Planning", "/", nameof (PolicyType.CoPolicy));
                 // 
-                options.Conventions.AuthorizeAreaFolder ("Production", "/", nameof (PolicyType.ProductionPolicy));
+                options.Conventions.AuthorizeAreaFolder ("Reports", "/", nameof (PolicyType.ProductionManagerPolicy));
+                options.Conventions.AuthorizeAreaFolder ("Production", "/", nameof (PolicyType.ProductionClerkPolicy));
                 // 
                 options.Conventions.AuthorizeAreaFolder ("QControl", "/", nameof (PolicyType.QControlPolicy));
             });

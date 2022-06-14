@@ -1,0 +1,48 @@
+﻿@page
+@model ZyPanel.Areas.BaseInfo.Pages.Hall.IndexModel
+@{
+    ViewBag.Title = "سالن و خط";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container my-3">
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>سالن</th>
+                    <th>خط</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Hall</td>
+                            <td>@item.Line</td>
+                            <td data-change>
+                                <div>
+                                    <a asp-area="BaseInfo" asp-page="/Hall/Stop" asp-route-id="@item.Id" target="_blank"
+                                data-more>توقفات</a>
+                                    <a asp-area="BaseInfo" asp-page="/Hall/Schedule" asp-route-id="@item.Id" target="_blank"
+                                data-more>اهداف زمانی</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

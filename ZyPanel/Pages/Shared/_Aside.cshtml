@@ -9,21 +9,27 @@
             case nameof(RoleType.CoRole):
             case nameof(RoleType.PlanningRole):
                 {
-                    <partial name="_CoGp" />
-                    <partial name="_PlanningGp" />
-                    <partial name="_ProductionGp" />
-                    <partial name="_QControlGp" />
+                    <partial name="Gp/_BaseGp" />
+                    <partial name="Gp/_ReportsGp" />
+                    <partial name="Gp/_PlanningGp" />
+                    <partial name="Gp/_ProductionGp" />
+                    <partial name="Gp/_QControlGp" />
                     break;
                 }
             case nameof(RoleType.ProductionManagerRole):
+                {
+                    <partial name="Gp/_ReportsGp" />
+                    <partial name="Gp/_ProductionGp" />
+                    break;
+                }
             case nameof(RoleType.ProductionClerkRole):
                 {
-                    <partial name="_ProductionGp" />
+                    <partial name="Gp/_ProductionGp" />
                     break;
                 }
             case nameof(RoleType.QControlRole):
                 {
-                    <partial name="_QControlGp" />
+                    <partial name="Gp/_QControlGp" />
                     break;
                 }
             default:
