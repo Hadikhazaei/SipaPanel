@@ -1,0 +1,24 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="production_dashboard">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_production" aria-expanded="false" aria-controls="collapse_production">
+            <span class="icon-btn">
+                <i class="bi bi-calendar-check"></i>
+            </span>
+            تولید
+        </button>
+    </h2>
+    <div id="collapse_production" class="accordion-collapse collapse" aria-labelledby="production_dashboard"
+        data-bs-parent="#accordionAside">
+        <div class="accordion-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Production" asp-page="/Index">گزارشات</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Production" asp-page="/ToDo/Index">برنامه ها</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

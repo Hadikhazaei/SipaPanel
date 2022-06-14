@@ -1,0 +1,457 @@
+﻿@page
+@model ZyPanel.Areas.Co.IndexModel
+@{
+    var title = "برنامه - تولید - (به تفکیک سالن)";
+    ViewBag.Title = title;
+}
+<div class="card my-3">
+    <div class="card-header">
+        @title
+    </div>
+    <div class="card-body">
+        <form asp-page="" method="get">
+            <div class="row">
+                <div class="col-3 entry-date">
+                    <div data-picker>
+                        <label for="date" class="col-form-label"></label>
+                        <div class="col" data-date>
+                            <input type="text" value='@Request.Query["date"]' name="date" class="form-control" readonly>
+                            <button type="button" data-trigger>
+                                <i class="bi select-date"></i>
+                                <i class="bi reset-date"></i>
+                            </button>
+                        </div>
+                        <div data-container></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-dark">جستجو</button>
+                </div>
+            </div>
+        </form>
+        <div class="container my-3">
+            <div class="row align-items-start">
+                <ul class="nav nav-tabs" id="myHallsTab" role="tablist">
+                    @foreach (var item in Model.StopInfoList)
+                    {
+                        var tabName = $"hall-{item.HallId}";
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="@tabName-tab" data-bs-toggle="tab" data-bs-target="#@tabName"
+                            type="button" role="tab" aria-controls="@tabName"
+                            aria-selected="true">@item.HallTitle</button>
+                        </li>
+                    }
+                </ul>
+                <div class="tab-content my-3" id="myHallsContent">
+                    @foreach (var hall in Model.StopInfoList)
+                    {
+                        var tabName = $"hall-{hall.HallId}";
+                        var guage = Model.GuageChartList.FirstOrDefault(x => x.Id == hall.HallId);
+                        <div class="tab-pane fade table-container" id="@tabName" role="tabpanel"
+                        aria-labelledby="@tabName-tab">
+
+                            @* Guage *@
+                            <div class="container">
+                                <div class="row align-items-center my-3">
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div id="daily-@hall.HallId" class="chart-height"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <th>تولید</th>
+                                                        <th>هدف</th>
+                                                        <th>تحقق</th>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>@guage.Daily.Performance</td>
+                                                        <td>@guage.Daily.Target</td>
+                                                        <td class="ltr" data-null>@guage.Daily.OffsetAsString</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div id="monthly-@hall.HallId" class="chart-height"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <th>تولید</th>
+                                                        <th>هدف</th>
+                                                        <th>تحقق</th>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>@guage.Monthly.Performance</td>
+                                                        <td>@guage.Monthly.Target</td>
+                                                        <td class="ltr" data-null>@guage.Monthly.OffsetAsString</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div id="yearly-@hall.HallId" class="chart-height"></div>
+                                            </div>
+                                            <div class="card-body">
+                                                <table class="table table-sm">
+                                                    <thead>
+                                                        <th>تولید</th>
+                                                        <th>هدف</th>
+                                                        <th>تحقق</th>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>@guage.Yearly.Performance</td>
+                                                        <td>@guage.Yearly.Target</td>
+                                                        <td class="ltr" data-null>@guage.Yearly.OffsetAsString</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @* StopInfo *@
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>خط</th>
+                                                        <th>وضعیت</th>
+                                                        <th colspan="3">
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th colspan="3">روزانه</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>هدف</th>
+                                                                        <th>عملکرد</th>
+                                                                        <th>انحراف(m)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var line in hall.Lines)
+                                                    {
+                                                        <tr>
+                                                            <td>@line.LineTitle</td>
+                                                            <td>@line.IsWorking</td>
+                                                            <td colspan="3">
+                                                                <table class="table table-bordered">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>@line.Daily.Target</th>
+                                                                            <th>@line.Daily.Performance</th>
+                                                                            <th class="ltr">@line.Daily.Tolerance</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="container" data-line-chart>
+                                            <div id="weekly-line-chart-@hall.HallId" data-title="@hall.HallTitle"
+                                            data-y-title="تناژ">
+                                            </div>
+                                            <div id="yearly-line-chart-@hall.HallId" data-title="@hall.HallTitle"
+                                            data-y-title="تناژ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @* قطعات در حال تولید *@
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <caption class="table-caption">قطعات در حال تولید</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>خط</th>
+                                            <th>قطعات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var product in Model.LatestTemplatesList.Where(x => x.HallId ==
+                                       hall.HallId).ToList())
+                                        {
+                                            <tr>
+                                                <td>@product.LineTitle</td>
+                                                <td>@product.ProductsTitle</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            @* وزن قطعات تولیدی روز قبل *@
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <caption class="table-caption">وزن قطعات تولیدی روز قبل</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>قطعه</th>
+                                            <th>تعداد</th>
+                                            <th>وزن</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var product in Model.ProductsWeightList.Where(x =>
+                                       hall.Lines.Any(y => y.LineId == x.LineId)).ToList())
+                                        {
+                                            <tr>
+                                                <td>@product.ProductTitle</td>
+                                                <td>@product.Count</td>
+                                                <td>@product.Weight</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            @* کارست *@
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <caption class="table-caption">کارست</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>نوع</th>
+                                            <th colspan="3">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3">روزانه</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>تناژ قطعه</th>
+                                                            <th>تناژ برنامه</th>
+                                                            <th>انحراف</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </th>
+                                            <th colspan="3">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3">ماهانه</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>تناژ قطعه</th>
+                                                            <th>تناژ برنامه</th>
+                                                            <th>انحراف</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </th>
+                                            <th colspan="3">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="3">سالانه</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>تناژ قطعه</th>
+                                                            <th>تناژ برنامه</th>
+                                                            <th>انحراف</th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var karset in Model.KarsetList)
+                                        {
+                                            <tr>
+                                                <td>@karset.KarsetTitle</td>
+                                                <td colspan="3">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>@karset.Daily.ProductTonnage</th>
+                                                                <th>@karset.Daily.PlanningTonnage</th>
+                                                                <th class="ltr">@karset.Daily.Available</th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td colspan="3">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>@karset.Monthly.ProductTonnage</th>
+                                                                <th>@karset.Monthly.PlanningTonnage</th>
+                                                                <th class="ltr">@karset.Monthly.Available</th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td colspan="3">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>@karset.Yearly.ProductTonnage</th>
+                                                                <th>@karset.Yearly.PlanningTonnage</th>
+                                                                <th class="ltr">@karset.Yearly.Available</th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+<partial name="_AnyChart" />
+
+<script>
+    datePicker(document.querySelector(".entry-date"));
+    document.querySelector("#myHallsTab li:first-child button")
+        .classList.add("active");
+    document.querySelector("#myHallsContent div:first-child")
+        .classList.add("show", "active");
+    //
+    //
+    //
+
+    lineChart();
+    function lineChart() {
+        let lineData = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.LineChartList)));
+        lineData.forEach(item => {
+            let hallTypeId = item.HallType;
+            let weeklyId = `weekly-line-chart-${hallTypeId}`;
+            let yearlyId = `yearly-line-chart-${hallTypeId}`;
+            drawLineChart(document.getElementById(weeklyId), item.WeeklyData);
+            drawLineChart(document.getElementById(yearlyId), item.YearlyData);
+
+        });
+    }
+    //
+    //
+    //
+    guageChart();
+    function guageChart() {
+        let guageData = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.GuageChartList)));
+        guageData.forEach(item => {
+            let id = item.Id;
+            let dailyId = `daily-${id}`;
+            let monthlyId = `monthly-${id}`;
+            let yearlyId = `yearly-${id}`;
+            let dailyOffset = item.Daily.Offset;
+            let monthlyOffset = item.Monthly.Offset;
+            let yearlyOffset = item.Yearly.Offset;
+            drawGuageChart(dailyOffset, dailyId);
+            drawGuageChart(monthlyOffset, monthlyId);
+            drawGuageChart(yearlyOffset, yearlyId);
+        });
+    }
+
+    function drawGuageChart(value, elementId) {
+        anychart.onDocumentReady(function () {
+            let gauge = anychart.gauges.circular();
+            gauge.fill('#fff')
+                .stroke(null)
+                .padding(0)
+                .startAngle(270)
+                .sweepAngle(180);
+
+            gauge.axis()
+                .labels()
+                .position('outside');
+            // AnyGauge Data _________________________________
+            gauge.data([value]);
+            gauge.axis().scale()
+                .minimum(0)
+                .maximum(120)
+                .ticks({ interval: 10 })
+                .minorTicks({ interval: 2 });
+
+            gauge.axis()
+                .fill('#545f69')
+                .width(1)
+                .ticks({ length: 4 })
+                .minorTicks({ length: 2 });
+
+            gauge.needle()
+                .startRadius('5%')
+                .endRadius('90%')
+                .startWidth('2%')
+                .endWidth('0.1%')
+                .middleWidth('1%');
+
+            gauge.range(0, {
+                from: 0,
+                to: 80,
+                position: 'inside',
+                fill: '#dd2c00 1',
+                startSize: 1,
+                endSize: 10,
+                radius: 100
+            });
+
+            gauge.range(1, {
+                from: 80,
+                to: 90,
+                position: 'inside',
+                fill: '#ffa000 1',
+                startSize: 10,
+                endSize: 15,
+                radius: 100
+            });
+
+            gauge.range(2, {
+                from: 90,
+                to: 120,
+                position: 'inside',
+                fill: '#009900 1',
+                startSize: 15,
+                endSize: 30,
+                radius: 100
+            });
+            gauge.container(elementId).draw();
+            gauge.draw();
+        });
+    }
+</script>
+}
+
+<style>
+    .chart-height {
+        height: 210px;
+    }
+
+    .tab-content .tab-pane .card .card-header table {
+        margin: auto !important;
+    }
+</style>

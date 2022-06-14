@@ -1,0 +1,75 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row mb-3">
+        <div class="col-12">
+            <label asp-for="UserRoleType" class="col-form-label d-block"></label>
+            @foreach (var c in Enum.GetValues(typeof(RoleType)))
+            {
+                var type = (RoleType)c;
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="UserRoleType" value="@((byte)c)"
+                    checked="@(type == Model?.UserRoleType)">
+                    <label class="form-check-label">@(EnumExtensions.GetDisplayName (type))</label>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="FullName" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="FullName" class="form-control">
+            </div>
+            <span asp-validation-for="FullName"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="UserName" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="UserName" class="form-control">
+            </div>
+            <span asp-validation-for="UserName"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="Password" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Password" class="form-control ltr">
+            </div>
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="ConfirmPassword" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="ConfirmPassword" class="form-control ltr">
+            </div>
+            <span asp-validation-for="ConfirmPassword"></span>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-6">
+            <label asp-for="HallType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="HallType" asp-items="Html.GetEnumSelectList<HallType>()"
+                    onchange="ajaxSelect(this)" data-target="TblHallId" data-url='@Url.Page("","LineAsSelect")'
+                    data-param="hallType"></select>
+            </div>
+            <span asp-validation-for="HallType"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="TblHallId" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="TblHallId"></select>
+            </div>
+            <span asp-validation-for="TblHallId"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

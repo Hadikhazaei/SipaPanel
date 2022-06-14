@@ -1,0 +1,68 @@
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.deps.json
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.dll
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\ref\DbLayer.dll
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.pdb
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.dll
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.dll
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.pdb
+D:\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.pdb
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.AssemblyReference.cache
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfoInputs.cache
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfo.cs
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CoreCompileInputs.cache
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CopyComplete
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.dll
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\ref\DbLayer.dll
+D:\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.pdb
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\DbLayer.deps.json
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\DbLayer.dll
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\ref\DbLayer.dll
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\DbLayer.pdb
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\CldLayer.dll
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\HpLayer.dll
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\CldLayer.pdb
+E:\Website\SipaCo\DbLayer\bin\Debug\net5.0\HpLayer.pdb
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.AssemblyReference.cache
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfoInputs.cache
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfo.cs
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CoreCompileInputs.cache
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CopyComplete
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.dll
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\ref\DbLayer.dll
+E:\Website\SipaCo\DbLayer\obj\Debug\net5.0\DbLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.deps.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\ref\DbLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.AssemblyReference.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfoInputs.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfo.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CoreCompileInputs.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CopyComplete
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\ref\DbLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.deps.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\ref\DbLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\DbLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\CldLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\bin\Debug\net5.0\HpLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.AssemblyReference.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfoInputs.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.AssemblyInfo.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CoreCompileInputs.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.csproj.CopyComplete
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\ref\DbLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\DbLayer\obj\Debug\net5.0\DbLayer.pdb

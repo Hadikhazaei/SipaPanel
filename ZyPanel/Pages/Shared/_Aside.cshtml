@@ -1,0 +1,33 @@
+@{
+    var role = Context.User.Identity?.GetUserRole();
+}
+<div class="overlay"></div>
+<aside id="aside" class="col-2">
+    <div class="accordion" id="accordionAside">
+        @switch (role)
+        {
+            case nameof(RoleType.CoRole):
+            case nameof(RoleType.PlanningRole):
+                {
+                    <partial name="_CoGp" />
+                    <partial name="_PlanningGp" />
+                    <partial name="_ProductionGp" />
+                    <partial name="_QControlGp" />
+                    break;
+                }
+            case nameof(RoleType.ProductionManagerRole):
+            case nameof(RoleType.ProductionClerkRole):
+                {
+                    <partial name="_ProductionGp" />
+                    break;
+                }
+            case nameof(RoleType.QControlRole):
+                {
+                    <partial name="_QControlGp" />
+                    break;
+                }
+            default:
+                break;
+        }
+    </div>
+</aside>

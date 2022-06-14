@@ -1,0 +1,287 @@
+.table-container {
+    .table-container-header {
+        display: flex;
+        margin: .8rem 0;
+
+        form {
+            display: flex;
+            margin: 0 .5rem;
+            justify-content: flex-start;
+
+            button[type=submit] {
+                margin-right: .2rem;
+            }
+        }
+    }
+
+    table {
+        .table-caption {
+            margin: .3rem 0;
+            font-size: .8rem;
+            font-weight: bold;
+            text-align: right;
+            border-radius: 2px;
+            padding: .1rem .5rem;
+
+            &.table-caption-sm {
+                font-size: .65rem !important;
+            }
+        }
+
+        tr {
+            font-size: $web-sm-font-size;
+
+            td,
+            th {
+                text-align: center;
+                vertical-align: middle;
+
+                &[data-file] {
+                    i {
+                        font-size: 1.8rem;
+                        color: $web-color-2;
+
+                        &::before {
+                            content: "\f15b";
+                        }
+                    }
+                }
+
+                &[data-text] {
+                    i {
+                        font-size: 1.5rem;
+                        color: $web-color-2;
+
+                        &::before {
+                            content: "\f086";
+                        }
+                    }
+                }
+
+                &[data-link] {
+                    a {
+                        i {
+                            font-size: 1.6rem;
+                            color: $web-color-2;
+
+                            &::before {
+                                content: "\f0c1";
+                            }
+                        }
+                    }
+                }
+
+                &[data-info] {
+                    i {
+                        font-size: 1.6rem;
+                        color: $web-color-2;
+
+                        &::before {
+                            content: "\f05a";
+
+                        }
+                    }
+                }
+
+                &[data-change] {
+                    &>div {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                    a[data-more] {
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        padding: .3rem .5rem;
+                        border-radius: .2rem;
+                        justify-content: center;
+                        background-color: $web-color-1;
+
+                        i {
+                            font-size: 1.6rem;
+                            color: $web-color-2;
+
+                            &::before {
+                                content: "\F5DE";
+                            }
+                        }
+
+                        &:hover {
+                            color: $web-color-3;
+                        }
+                    }
+
+                    form {
+                        margin: 0 .5rem;
+
+                        button {
+                            border: 0;
+                            padding: 0;
+                            background-color: transparent;
+
+                            &[data-trash] {
+                                i {
+                                    font-size: 1.6rem;
+                                    color: $web-color-5;
+
+                                    &::before {
+                                        content: "\F5DE";
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    button[data-edit] {
+                        border: 0;
+                        padding: 0;
+                        background-color: transparent;
+
+                        i {
+                            font-size: 1.6rem;
+                            color: $web-color-2;
+
+                            &::before {
+                                content: "\F4CA";
+                            }
+                        }
+                    }
+                }
+
+                &[data-active] {
+                    font-weight: bold;
+
+                    &[data-active=True]::before {
+                        color: green;
+                        content: "فعال";
+                    }
+
+                    &[data-active=False]::before {
+                        color: red;
+                        content: "غیرفعال";
+                    }
+                }
+
+                &[data-null] {
+                    &:empty {
+                        &::before {
+                            content: "---";
+                        }
+                    }
+                }
+
+                &[data-ready] {
+                    font-weight: bold;
+
+                    &[data-ready=True]::before {
+                        color: green;
+                        content: "بله";
+                    }
+
+                    &[data-ready=False]::before {
+                        color: red;
+                        content: "خیر";
+                    }
+                }
+
+                &[data-stop] {
+                    font-weight: bold;
+
+                    &[data-stop=True]::before {
+                        color: red;
+                        content: "توقف";
+                    }
+
+                    &[data-stop=False]::before {
+                        color: green;
+                        content: "شروع";
+                    }
+                }
+
+                // .verify-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-sucess-status-color;
+                //         content: "تایید شده";
+                //     }
+                // }
+
+                // .unverify-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-danger-status-color;
+                //         content: "عدم تایید";
+                //     }
+                // }
+
+                // .lock-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-danger-status-color;
+                //         content: "قفل شده";
+                //     }
+                // }
+
+                // .unlock-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-sucess-status-color;
+                //         content: "عدم قفل";
+                //     }
+                // }
+
+                // .has-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-sucess-status-color;
+                //         content: "دارد";
+                //     }
+                // }
+
+                // .hasnt-status {
+                //     text-decoration: underline;
+
+                //     &::before {
+                //         color: $table-danger-status-color;
+                //         content: "ندارد";
+                //     }
+                // }
+
+                // .null-status {
+                //     padding-right: .1rem;
+
+                //     &::before {
+                //         content: "---";
+                //     }
+                // }
+            }
+        }
+
+        .nested-table {
+            thead {
+                tr {
+                    th {
+                        border-bottom-width: .1px;
+                        border-bottom-color: #80808040 !important;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &:last-child {
+                        td {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+﻿@page
+@model ZyPanel.Areas.Planning.Pages.ToDo.IndexModel
+@{
+    ViewBag.Title = "todo planning";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن برنامه" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ایجاد - کاربر</th>
+                    <th>خط - برنامه</th>
+                    <th>نوع - تعداد شیفت</th>
+                    <th>تاریخ برنامه</th>
+                    <th>مجموع روزها</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+
+                        <tr class='@(item.IsDoing ? "table-success" : null)'>
+                            <td>@item.Id</td>
+                            <td>@item.CreatedDate - @item.UserName</td>
+                            <td>@item.HallTitle - @item.PlanningTitle</td>
+                            <td>@item.ScheduleTitle - @item.SchdeduleCount</td>
+                            <td>@item.BeginDate - @item.FinishDate</td>
+                            <td>@item.ConsideredDays</td>
+                            <td data-change>
+                                <div>
+                                    <button type="button" data-edit data-title="ویرایش : @item.PlanningTitle"
+                                data-url='@Url.Page("","Edit",new {id=@item.Id})' onclick="ajaxLoadPartialForm(this)">
+                                        <i class="bi"></i>
+                                    </button>
+                                    <a asp-area="Planning" asp-page="/ToDoInfo/Index" asp-route-id="@item.Id" data-more>
+                                        ادامه
+                                    </a>
+                                    <a asp-area="Planning" asp-page="/Tonnage/Index" asp-route-id="@item.Id" data-more> ثبت
+                                        تناژ</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+}

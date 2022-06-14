@@ -1,0 +1,54 @@
+﻿@page
+@model ZyPanel.Areas.Co.Pages.Fusion.IndexModel
+@{
+    ViewBag.Title = "ذوب";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن ذوب" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>نوع</th>
+                    <th>عنوان</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Fusion</td>
+                            <td>@item.Title</td>
+                            <td data-change>
+                                <div>
+                                    <button type="button" data-edit data-title="ویرایش : @item.Title"
+                                data-url='@Url.Page("","Edit",new {id=@item.Id})' onclick="ajaxLoadPartialForm(this)">
+                                        <i class="bi"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

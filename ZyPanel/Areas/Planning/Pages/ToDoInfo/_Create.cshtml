@@ -1,0 +1,51 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="TblTemplateId" class="col-form-label"></label>
+            <div class="col">
+                @if (Model.EditMode)
+                {
+                    <input type="hidden" asp-for="TblTemplateId" />
+                    <select class="form-select" asp-for="TblTemplateId" asp-items="@Model.Templates" disabled></select>
+                }
+                else
+                {
+                    <select class="form-select" asp-for="TblTemplateId" asp-items="@Model.Templates"></select>
+                }
+            </div>
+            <span asp-validation-for="TblTemplateId"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="TemplateCount" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="TemplateCount" class="form-control">
+            </div>
+            <span asp-validation-for="TemplateCount"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="Order" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Order" class="form-control">
+            </div>
+            <span asp-validation-for="Order"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="Explanation" class="col-form-label"></label>
+            <div class="col-sm-12">
+                <textarea asp-for="Explanation" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

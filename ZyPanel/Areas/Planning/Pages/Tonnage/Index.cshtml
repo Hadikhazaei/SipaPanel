@@ -1,0 +1,51 @@
+@page "{Id}"
+@model ZyPanel.Areas.Planning.Pages.Tonnage.IndexModel
+@{
+    ViewBag.Title = "tonnage";
+    var createUrl = Url.Page("", "Create");
+}
+<partial name="_Alert" model="Model.Alert" />
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن تناژ" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <vc:planning-info pid="@Model.Id"></vc:planning-info>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>
+                        @(Model.List.Sum(x=>x.UsedTonnageAsKg) / 1000) تن
+                        @(Model.List.Sum(x=>x.UsedTonnageAsKg) % 1000) کیلو
+                    </th>
+                    <th>تاریخ</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.UsedTonnageAsTone</td>
+                            <td class="ltr">@item.PersianTonnageDate</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+@section Scripts{
+<partial name="_Date" />
+}

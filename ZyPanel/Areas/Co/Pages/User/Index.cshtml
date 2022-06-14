@@ -1,0 +1,54 @@
+﻿@page
+@model ZyPanel.Areas.Co.Pages.User.IndexModel
+@{
+    ViewBag.Title = "کاربران";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن کاربر" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن کاربر
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>نام کاربری</th>
+                    <th>نام و نام خانوادگی</th>
+                    <th>اطلاعات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    int index = 0;
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@(index++)</td>
+                            <td>@item.UserName</td>
+                            <td>@item.DisplayName</td>
+                            <td data-null>@item.HallTitle</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>
+
+@section Scripts{
+<script>
+</script>
+}

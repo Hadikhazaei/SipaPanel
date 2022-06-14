@@ -1,0 +1,43 @@
+public HallType HallType { get; set; } = HallType.CastIron;
+public HallType[] HallTypes => new [] { HallType.CastIron, HallType.Aluminium };
+ 
+<div class="row">
+    <div class="col-2">
+        <p class="fs-5"></p>
+    </div>
+    <div class="col-10 d-flex justify-content-center">
+            @foreach (var c in Model.HallTypes)
+            {
+                <div class="form-check form-check-inline">
+                    <input type="radio" asp-for="HallType" value="@c" checked="@(c == Model?.HallType)" />
+                    <label asp-for="HallType">@(EnumExt.GetDisplayName (c))</label>
+                </div>
+            }
+    </div>
+</div>
+
+
+<div class="col-12">
+    @foreach (var c in Enum.GetValues(typeof(ScheduleType)))
+        {
+                var type = (ScheduleType)c;
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="ScheduleType" value="@((byte)c)"
+                    checked="@(type == Model?.ScheduleType)">
+                    <label class="form-check-label" asp-for="ScheduleType">@(EnumExt.GetDisplayName (type))</label>
+                </div>
+        }
+</div>
+
+.OrderBy (x => x.IsActive ? 0 : 1)
+
+<td data-active="@item.IsActive"></td>
+
+var clusterWeight = (int) (decimal.Parse (Input.ClusterWeight, CultureInfo.InvariantCulture) * 1000);
+
+
+[RegularExpression (@"^[0-9]+(\.[0-9]{1,2})$", ErrorMessage = "تا دو رقم اعشار مجاز می باشد.")]
+
+
+
+

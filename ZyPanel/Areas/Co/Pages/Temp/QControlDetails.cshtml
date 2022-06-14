@@ -1,0 +1,73 @@
+﻿@page "{productid}/{begindate}/{finishdate}"
+@model ZyPanel.Areas.Co.Pages.Temp.QControlDetailsModel
+@{
+    ViewBag.Title = "گزارش کنترل کیفی";
+}
+
+<div class="table-container my-3">
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <caption>
+                از : <bdo class="ltr">@Model.BeginDate</bdo> ،
+                تا : <bdo class="ltr"> @Model.FinishDate</bdo> ،
+                <span>@Model.Hall</span> ، <span>@Model.Product</span>
+            </caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>تاریخ ایجاد</th>
+                    <th>تاریخ تولید</th>
+                    <th>عیب</th>
+                    <th>محل عیب</th>
+                    <th>ضایع</th>
+                    <th>سالم</th>
+                    <th>درصد ضایع</th>
+                    <th>مرجوعی</th>
+                    <th>نوع ضایع</th>
+                    <th>نامنطبق</th>
+                    <th>ایستگاه</th>
+                    <th>کد ردیابی</th>
+                    <th>نوع محافظ</th>
+                    <th>بازرس</th>
+                    <th>توضیحات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.CreateDate</td>
+                            <td>@item.ProductionDate</td>
+                            <td>@item.DefectTitle</td>
+                            <td>@item.DefectPlaceTitle</td>
+                            <td>@item.Waste</td>
+                            <td>@item.Healthy</td>
+                            <td>@item.WastePercent %</td>
+                            <td>@item.BackCount</td>
+                            <td>@item.BackTitle</td>
+                            <td data-ready="@item.IsWaste"></td>
+                            <td>@item.StationTitle</td>
+                            <td>@item.TrackCode</td>
+                            <td>@item.ShieldType</td>
+                            <td>@item.Inspecter</td>
+                            <td data-text>
+                                <a href="javascript:void(0)" data-title="توضیحات" data-body="@item.Explanation"
+                            onclick="viewModalAsText(this)">
+                                    <i class="bi"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>

@@ -1,0 +1,42 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="Title" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Title" class="form-control">
+            </div>
+            <span asp-validation-for="Title"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <label asp-for="TblFusionId" class="col-form-label"></label>
+        <div class="col-12">
+            <select class="form-select" asp-for="TblFusionId" asp-items="@Model.Fusions"></select>
+        </div>
+        <span asp-validation-for="TblFusionId"></span>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="StoreCode" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="StoreCode" class="form-control">
+            </div>
+            <span asp-validation-for="StoreCode"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="TechnicalCode" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="TechnicalCode" class="form-control">
+            </div>
+            <span asp-validation-for="TechnicalCode"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

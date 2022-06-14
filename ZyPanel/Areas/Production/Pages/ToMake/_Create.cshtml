@@ -1,0 +1,60 @@
+@model IndexModel.InputModel
+<form asp-page="">
+    <div class="col-12 my-2">
+        <label asp-for="ChargeType" class="col-form-label"></label>
+        @foreach (var c in Enum.GetValues(typeof(ChargeType)))
+        {
+            var type = (ChargeType)c;
+            <div class="form-check form-check-inline">
+                @if (Model.IsCastIron)
+                {
+                    <input class="form-check-input" type="radio" asp-for="ChargeType" value="@((byte)c)"
+                checked="@(type == Model?.ChargeType)">
+                }
+                else
+                {
+                    <input class="form-check-input" type="radio" asp-for="ChargeType" value="@((byte)c)"
+                checked="@(type == Model?.ChargeType)" disabled>
+                }
+                <label class="form-check-label" asp-for="ChargeType">@(EnumExtensions.GetDisplayName (type))</label>
+            </div>
+        }
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="TblTemplateId" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="TblTemplateId" asp-items="@Model.Templates"></select>
+            </div>
+            <span asp-validation-for="TblTemplateId"></span>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col-6">
+            <label asp-for="TakeCount" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="TakeCount" class="form-control">
+            </div>
+            <span asp-validation-for="TakeCount"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="PutCount" class="col-form-label"></label>
+            <div class="col">
+                @if (Model.IsCastIron)
+                {
+                    <input asp-for="PutCount" class="form-control">
+                }
+                else
+                {
+                    <input asp-for="PutCount" class="form-control" disabled>
+                }
+            </div>
+            <span asp-validation-for="PutCount"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <input type="hidden" asp-for="IsCastIron">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

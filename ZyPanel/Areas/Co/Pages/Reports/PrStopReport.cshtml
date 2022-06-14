@@ -1,0 +1,141 @@
+﻿@page
+@model ZyPanel.Areas.Co.Pages.Reports.PrStopReportModel
+@{
+    var title="(روزانه) گزارش تولید - توقف";
+    ViewBag.Title = title;
+}
+<div class="card my-3">
+    <div class="card-header">
+        @title 
+    </div>
+  <div class="card-body">
+        <form asp-page="" method="get">
+                <div class="row">
+                    <div class="col-3 entry-date">
+                        <div data-picker>
+                            <label for="date" class="col-form-label"></label>
+                                <div class="col" data-date>
+                                    <input type="text" value='@Request.Query["date"]' name="date" class="form-control" readonly>
+                                    <button type="button" data-trigger>
+                                        <i class="bi select-date"></i>
+                                        <i class="bi reset-date"></i>
+                                    </button>
+                                </div>
+                            <div data-container></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-outline-dark">جستجو</button>
+                    </div>
+                </div>
+        </form>
+        <div class="container my-3">
+            <div class="row align-items-start">
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        var cls=@item.IsWorking ? "text-white bg-success" : "text-white bg-danger";
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header @cls">
+                                    <div class="d-flex justify-content-around">
+                                        <b>@item.HallTitle</b>
+                                        <small>@Model.Date</small>
+                                    </div>
+                                </div>
+                            <div class="card-body table-container">
+                                <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>قالب</th>
+                                                    <th>شیفت 1</th>
+                                                    <th>شیفت 2</th>
+                                                    <th>مجموع</th>
+                                                    <th>توقف</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var child in item.Templates)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <a tabindex="1" style="padding: .2rem;"
+                                                            class="btn btn-sm btn-success" role="button"
+                                                    data-bs-toggle="popover" data-bs-trigger="focus" data-bs-html="true"
+                                                    data-bs-placement="right" title="قطعات قالب @child.TemplateCode"
+                                                    data-bs-content="<ol>
+                                                        @foreach (var p in child.Products)
+                                                        {
+                                                            <li>@p.Value 
+                                                            <span class='d-block text-center'>
+                                                                QTY : @(p.Key * (child.SingleSchedulePutCount + child.CoupleSchedulePutCount))</span>
+                                                            </li>
+                                                        }
+                                                        </ol>">@child.TemplateCode </a>
+                                                        </td>
+                                                        <td>@child.SingleSchedulePutCount</td>
+                                                        <td>@child.CoupleSchedulePutCount</td>
+                                                        <td>@(child.SingleSchedulePutCount + child.CoupleSchedulePutCount)</td>
+                                                        <td>@{
+                                                                <b>@((child.SingleStopTime + child.CoupleStopTime) / 60)h,
+                                                                @((child.SingleStopTime + child.CoupleStopTime) % 60)m</b>
+                                                        }
+                                                        </td>
+                                                    </tr>
+                                                }
+                                                <tfoot>
+                                                    @{var s=item.Templates.Sum(x=>x.SingleStopTime)+item.Templates.Sum(x=>x.CoupleStopTime);}
+                                                    <tr>
+                                                        <td>نتیجه</td>
+                                                        <td>@item.Templates.Sum(x=>x.SingleSchedulePutCount)</td>
+                                                        <td>@item.Templates.Sum(x=>x.CoupleSchedulePutCount)</td>
+                                                        <td>@item.Templates.Sum(x=>x.SingleSchedulePutCount+x.CoupleSchedulePutCount)</td>
+                                                        <td>@(s/60)h,@(s%60)m</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>توقف</td>
+                                                        <td colspan="2">شیفت اول : 
+                                                            @(item.Templates.Sum(x=>x.SingleStopTime)/60)h,
+                                                            @(item.Templates.Sum(x=>x.SingleStopTime)%60)m</td>
+                                                        <td colspan="2">شیفت دوم : 
+                                                            @(item.Templates.Sum(x=>x.CoupleStopTime)/60)h,
+                                                            @(item.Templates.Sum(x=>x.CoupleStopTime)%60)m
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="text-center my-5">
+                        <h1 class="display-4">Welcome :)</h1>
+                    </div>
+                }
+            </div>
+        </div>
+  </div>
+</div>
+
+<style>
+    ol {
+        line-height: 2 !important;
+    }
+</style>
+@section Scripts{
+<partial name="_Date" />
+<script>
+    datePicker(document.querySelector(".entry-date"));
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+</script>
+}

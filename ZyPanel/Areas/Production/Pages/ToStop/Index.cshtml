@@ -1,0 +1,131 @@
+﻿@page "{Id}"
+@model ZyPanel.Areas.Production.Pages.ToStop.IndexModel
+@{
+    ViewBag.Title = "todo stop";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <vc:planning-info pid="@Model.Id"></vc:planning-info>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>کاربر</th>
+                    <th>وضعیت</th>
+                    <th>قالب</th>
+                    <th>نوع توقف</th>
+                    <th>کد توقف</th>
+                    <th>زمان شروع</th>
+                    <th>زمان پایان</th>
+                    <th>زمان توقف</th>
+                    <th>شماره فنی</th>
+                    <th>شرح</th>
+                    <th>اختلاف شروع</th>
+                    <th>اختلاف پایان</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.UserName</td>
+                            <td data-stop="@(!item.IsStopped)">
+                                @if (!item.IsStopped)
+                                {
+                                    var h = (int)(DateTime.Now - item.HelperBeginDate).TotalMinutes;
+                                    <b>(@FormatHelper.GetTimeValue(h))</b>
+                                }
+                            </td>
+                            <td>@item.Template</td>
+                            <td>@item.StopType</td>
+                            <td title="@item.StopTitle">@item.StopCode</td>
+                            <td class="ltr">@item.BeginDate</td>
+                            <td class="ltr">@item.FinishDate</td>
+                            <td>
+                                <b>
+                                    @(FormatHelper.GetFriendlyTimeValue(item.CalculatedMinutes))
+                                </b>
+                            </td>
+                            <td data-null>@item.TechnicalNumber</td>
+                            <td data-text>
+                                <a href="javascript:void(0)" data-title="توضیحات" data-body="@item.Brief"
+                            onclick="viewModalAsText(this)">
+                                    <i class="bi"></i>
+                                </a>
+                            </td>
+                            @if (!item.IsStopped)
+                            {
+                                <td data-change colspan="2">
+                                    <form asp-page-handler="start" onsubmit="return confirm('آیا مطمئن هستید؟')">
+                                        <input type="hidden" name="stopId" value="@item.Id">
+                                        <input class="btn btn-success" type="submit" value="شروع به کار">
+                                    </form>
+                                </td>
+                            }
+                            else
+                            {
+                                <td data-change>
+                                    <div>
+                                        @if (!item.IsModifyBeginDate)
+                                        {
+
+                                            <form asp-page-handler="SubtractBegin" onsubmit="return confirm('آیا مطمئن هستید؟')">
+                                                <div class="input-group">
+                                                    <input type="hidden" name="bid" value="@item.Id">
+                                                    <input type="number" name="time" value="0" class="form-control"
+                                        style="width: 75px;">
+                                                    <input type="submit" class="btn btn-success" value="ثبت">
+                                                </div>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <b>---</b>
+                                        }
+                                    </div>
+                                </td>
+                                <td data-change>
+                                    <div>
+                                        @if (!item.IsModifyFinishDate)
+                                        {
+
+                                            <form asp-page-handler="SubtractFinish" onsubmit="return confirm('آیا مطمئن هستید؟')">
+                                                <div class="input-group">
+                                                    <input type="hidden" name="fid" value="@item.Id">
+                                                    <input type="number" name="time" value="0" class="form-control"
+                                        style="width: 75px;">
+                                                    <input type="submit" class="btn btn-success" value="ثبت">
+                                                </div>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <b>---</b>
+                                        }
+                                    </div>
+                                </td>
+                            }
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>

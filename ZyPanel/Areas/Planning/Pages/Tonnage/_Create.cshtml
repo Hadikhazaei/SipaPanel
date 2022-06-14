@@ -1,0 +1,31 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="PersianTonnageDate" class="col-form-label"></label>
+            <div data-picker>
+                <div class="col" data-date>
+                    <input asp-for="PersianTonnageDate" class="form-control" readonly>
+                    <button type="button" data-trigger>
+                        <i class="bi select-date"></i>
+                        <i class="bi reset-date"></i>
+                    </button>
+                </div>
+                <span asp-validation-for="PersianTonnageDate"></span>
+                <div data-container></div>
+            </div>
+        </div>
+        <div class="col-6">
+            <label asp-for="UsedTonnageAsKg" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="UsedTonnageAsKg" class="form-control">
+            </div>
+            <span asp-validation-for="UsedTonnageAsKg"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

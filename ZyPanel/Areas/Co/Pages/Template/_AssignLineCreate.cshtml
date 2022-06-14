@@ -1,0 +1,14 @@
+@model AssignLineModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="TblHallId" class="col-form-label"></label>
+            <select class="form-select" asp-for="TblHallId" asp-items="@Model.Halls"></select>
+        </div>
+        <span asp-validation-for="TblHallId"></span>
+    </div>
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

@@ -1,0 +1,61 @@
+@model IndexModel.InputModel
+
+@if (!Model.IsAvailabel)
+{
+    <div class="alert alert-warning" role="alert">
+        <p class="mb-0 fw-bold">در حال حاضر توقف ثبت شده است :)</p>
+    </div>
+}
+else
+{
+    <form asp-page="">
+        <div class="row">
+            <div class="col-6">
+                <label asp-for="TblTemplateId" class="col-form-label"></label>
+                <div class="col">
+                    <select class="form-select" asp-for="TblTemplateId" asp-items="@Model.Templates"></select>
+                </div>
+                <span asp-validation-for="TblTemplateId"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="StopType" class="col-form-label"></label>
+                <div class="col">
+                    <select class="form-select" asp-for="StopType" asp-items="@Model.StopTypes">
+                        <option value="">--انتخاب کنید--</option>
+                    </select>
+                </div>
+                <span asp-validation-for="StopType"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label asp-for="StopCode" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="StopCode" class="form-control">
+                </div>
+                <span asp-validation-for="StopCode"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="TechnicalNumber" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="TechnicalNumber" class="form-control">
+                </div>
+                <span asp-validation-for="TechnicalNumber"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label asp-for="Brief" class="col-form-label"></label>
+                <div class="col-sm-12">
+                    <textarea asp-for="Brief" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-outline-dark">ثبت</button>
+        </div>
+    </form>
+}

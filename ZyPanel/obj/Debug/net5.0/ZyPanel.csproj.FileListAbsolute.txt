@@ -1,0 +1,641 @@
+D:\SaipaCo\zypanel\bin\Debug\net5.0\appsettings.Development.json
+D:\SaipaCo\zypanel\bin\Debug\net5.0\appsettings.json
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.exe
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.deps.json
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.json
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.dev.json
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ref\ZyPanel.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.Views.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ZyPanel.Views.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\AutoMapper.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\ExcelDataReader.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Humanizer.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\CldLayer.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\DbLayer.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\HpLayer.dll
+D:\SaipaCo\zypanel\bin\Debug\net5.0\DbLayer.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\CldLayer.pdb
+D:\SaipaCo\zypanel\bin\Debug\net5.0\HpLayer.pdb
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.csproj.AssemblyReference.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.GeneratedMSBuildEditorConfig.editorconfig
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.AssemblyInfoInputs.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.AssemblyInfo.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.csproj.CoreCompileInputs.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\scopedcss\bundle\ZyPanel.styles.css
+D:\SaipaCo\zypanel\obj\Debug\net5.0\staticwebassets\ZyPanel.StaticWebAssets.Manifest.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.TagHelpers.input.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.TagHelpers.output.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.RazorCoreGenerate.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Stop.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\AssignLine.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Weight.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_AssignLineCreate.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_ProductCreate.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_WeightCreate.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewImports.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewStart.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewImports.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewStart.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToDo\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Info.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewImports.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewStart.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Denied.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Ooops.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\Components\PlanningInfo\Default.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Alert.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Aside.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_CoGp.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Date.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Navbar.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_Pagination.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_PlanningGp.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_ProductionGp.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cache
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.Views.pdb
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.csproj.CopyComplete
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.dll
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ref\ZyPanel.dll
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.pdb
+D:\SaipaCo\zypanel\obj\Debug\net5.0\ZyPanel.genruntimeconfig.cache
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\appsettings.Development.json
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\appsettings.json
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.exe
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.deps.json
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.json
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.dev.json
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ref\ZyPanel.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\AutoMapper.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\ExcelDataReader.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Humanizer.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.Drawing.Common.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.Runtime.Caching.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.dll
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.pdb
+E:\Website\SipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.pdb
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.AssemblyReference.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.GeneratedMSBuildEditorConfig.editorconfig
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfoInputs.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfo.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CoreCompileInputs.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\scopedcss\bundle\ZyPanel.styles.css
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\staticwebassets\ZyPanel.StaticWebAssets.Manifest.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.input.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.output.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorCoreGenerate.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Stop.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\QControl.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\QControlDetails.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\AssignLine.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Weight.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_AssignLineCreate.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_ProductCreate.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_WeightCreate.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewImports.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewStart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewImports.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewStart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToDo\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Info.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewImports.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewStart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\_Create.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewImports.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewStart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Denied.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Ooops.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\Components\PlanningInfo\Default.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Alert.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Aside.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_CoGp.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Date.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Navbar.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Pagination.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_PlanningGp.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_ProductionGp.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_QControlGp.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cache
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.Views.pdb
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CopyComplete
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.dll
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ref\ZyPanel.dll
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.pdb
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.genruntimeconfig.cache
+<<<<<<< HEAD
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\Index.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\_Create.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewImports.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewStart.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_QControlGp.cshtml.g.cs
+=======
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\PlanningChart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\StopChart.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Schedule.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_CreateSchedule.cshtml.g.cs
+>>>>>>> 4470801f0af92f3d3a7627006d85211b67b6d090
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\PlanningChart.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\StopChart.cshtml.g.cs
+>>>>>>> 394d01661e21e86e725b148eeb0f641a55c5c310
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\StopInfoReport.cshtml.g.cs
+E:\Website\SipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\TonnageReport.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Schedule.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_CreateSchedule.cshtml.g.cs
+D:\SaipaCo\zypanel\obj\Debug\net5.0\Razor\Pages\Shared\_AnyChart.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\Index.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\_Create.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrPlanningReport.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrStopReport.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Index.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControl.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControlDetails.cshtml.g.cs
+D:\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\StopInfoReport.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\appsettings.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.exe
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.deps.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.dev.json
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ref\ZyPanel.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\ExcelDataReader.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Humanizer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.AssemblyReference.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfoInputs.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfo.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CoreCompileInputs.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\scopedcss\bundle\ZyPanel.styles.css
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\staticwebassets\ZyPanel.StaticWebAssets.Manifest.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.input.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.output.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorCoreGenerate.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\PlanningChart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\StopChart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Schedule.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Stop.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_CreateSchedule.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrPlanningReport.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrStopReport.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\AssignLine.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Weight.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_AssignLineCreate.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_ProductCreate.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_WeightCreate.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControl.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControlDetails.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\StopInfoReport.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewStart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewStart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Info.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewStart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\_Create.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewStart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Denied.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Ooops.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\Components\PlanningInfo\Default.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Alert.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_AnyChart.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Aside.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_CoGp.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Date.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Navbar.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Pagination.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_PlanningGp.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_ProductionGp.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_QControlGp.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cs
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.Views.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CopyComplete
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ref\ZyPanel.dll
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.pdb
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.genruntimeconfig.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\appsettings.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.exe
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.deps.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.runtimeconfig.dev.json
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ref\ZyPanel.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ZyPanel.Views.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\ExcelDataReader.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Humanizer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\DbLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\CldLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\bin\Debug\net5.0\HpLayer.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.AssemblyReference.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfoInputs.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.AssemblyInfo.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CoreCompileInputs.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorAssemblyInfo.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\scopedcss\bundle\ZyPanel.styles.css
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\staticwebassets\ZyPanel.StaticWebAssets.Manifest.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.input.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.TagHelpers.output.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorCoreGenerate.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\PlanningChart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Charts\StopChart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Defect\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Fusion\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Schedule.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\Stop.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Hall\_CreateSchedule.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Karset\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Product\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrPlanningReport.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\PrStopReport.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Schedule\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\AssignLine.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\Weight.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_AssignLineCreate.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_ProductCreate.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Template\_WeightCreate.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControl.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\QControlDetails.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Temp\StopInfoReport.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\User\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewImports.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\_ViewStart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDoInfo\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\ToDo\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\Tonnage\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewImports.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Planning\Pages\_ViewStart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\Info.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToMake\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\ToStop\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewImports.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Production\Pages\_ViewStart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDoInfo\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\ToDo\_Create.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewImports.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\QControl\Pages\_ViewStart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Denied.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Ooops.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\Components\PlanningInfo\Default.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Alert.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_AnyChart.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Aside.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_CoGp.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Date.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Navbar.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_Pagination.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_PlanningGp.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_ProductionGp.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\Shared\_QControlGp.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cache
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.RazorTargetAssemblyInfo.cs
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.Views.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.csproj.CopyComplete
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ref\ZyPanel.dll
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.pdb
+C:\Users\eshams\Desktop\Hadi\SaipaCo\ZyPanel\obj\Debug\net5.0\ZyPanel.genruntimeconfig.cache
+C:\Users\A V V A L Pc\Desktop\SaipaCo\ZyPanel\obj\Debug\net5.0\Razor\Areas\Co\Pages\Reports\MYReport.cshtml.g.cs

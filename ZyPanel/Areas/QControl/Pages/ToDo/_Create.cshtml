@@ -1,0 +1,67 @@
+@model IndexModel.InputModel
+<form asp-page="">
+    <div class="row my-3">
+        <div class="col-6">
+            <label asp-for="TblProductId" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="TblProductId" asp-items="Model.Products"></select>
+            </div>
+            <span asp-validation-for="TblProductId"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="PersianProductionDate" class="col-form-label"></label>
+            <div data-picker>
+                <div class="col" data-date>
+                    <input asp-for="PersianProductionDate" class="form-control" readonly>
+                    <button type="button" data-trigger>
+                        <i class="bi select-date"></i>
+                        <i class="bi reset-date"></i>
+                    </button>
+                </div>
+                <div data-container></div>
+            </div>
+            <span asp-validation-for="PersianProductionDate"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <label asp-for="StationType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="StationType"
+                    asp-items="Html.GetEnumSelectList<StationType>()"></select>
+            </div>
+            <span asp-validation-for="StationType"></span>
+        </div>
+        <div class="col-4">
+            <label asp-for="Inspecter" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Inspecter" class="form-control">
+            </div>
+            <span asp-validation-for="Inspecter"></span>
+        </div>
+
+        <div class="col-4">
+            <label asp-for="BackCount" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="BackCount" class="form-control">
+            </div>
+            <span asp-validation-for="BackCount"></span>
+        </div>
+    </div>
+
+    <!-- Explanation -->
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="Explanation" class="col-form-label"></label>
+            <div class="col-sm-12">
+                <textarea asp-for="Explanation" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

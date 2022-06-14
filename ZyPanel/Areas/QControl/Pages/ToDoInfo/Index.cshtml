@@ -1,0 +1,61 @@
+﻿@page "{id}"
+@model ZyPanel.Areas.QControl.Pages.ToDoInfo.IndexModel
+@{
+    ViewBag.Title = "todoinfo qcontrol";
+    var createUrl = Url.Page("", "Create");
+}
+<partial name="_Alert" model="Model.Alert" />
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>نامنطبق</th>
+                    <th>ایجاد</th>
+                    <th>محل عیب</th>
+                    <th>عیب</th>
+                    <th>کد ردیابی</th>
+                    <th>نوع محفظه</th>
+                    <th>توضیحات</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td data-ready="@item.IsWaste"></td>
+                            <td class="ltr">@item.PersianCreateDate</td>
+                            <td>@item.DefectPlaceTitle</td>
+                            <td>@item.Defect</td>
+                            <td data-null>@item.TrackCode</td>
+                            <td data-null>@item.ShieldType</td>
+                            <td data-text>
+                                <a href="javascript:void(0)" data-title="توضیحات" data-body="@item.Explanation"
+                            onclick="viewModalAsText(this)">
+                                    <i class="bi"></i>
+                                </a>
+                            </td>
+                            <td>---</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>

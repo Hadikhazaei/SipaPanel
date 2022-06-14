@@ -1,0 +1,121 @@
+﻿@page "{Id}"
+@model ZyPanel.Areas.Planning.Pages.ToDoInfo.IndexModel
+@{
+    ViewBag.Title = "todo planning info";
+    var createUrl = Url.Page("", "Create");
+}
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title='افزودن' data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>افزودن
+        </button>
+    </div>
+
+    <div class="btn-group mb-3" role="group" aria-label="Basic">
+        <button type="button" class="btn btn-outline-dark btn-sm" disabled>
+            مجموع وزن خوشه ها :
+            @((Model.List.Sum(x=>x.TotalTemplateWeightAsKg)).GetValueAsTwoPoint())
+            کیلوگرم
+        </button>
+        <button type="button" class="btn btn-outline-dark btn-sm" disabled>
+            مجموع وزن قطعه ها :
+            @(( Model.List.Sum(x=>x.Products.Sum(x=>x.TotalProductWeightAsKg))).GetValueAsTwoPoint())
+            کیلوگرم
+        </button>
+    </div>
+
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <vc:planning-info pid="@Model.Id"></vc:planning-info>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ایجاد</th>
+                    <th>تعداد - کد قالب</th>
+                    <th>کد وزن کشی</th>
+                    <th>وزن خوشه (kg)</th>
+                    <th>تعداد کویته</th>
+                    <th>اولویت</th>
+                    <th>توضیحات</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td class="ltr">@item.CreatedDate</td>
+                            <td>@item.TemplateCode - @item.TemplateCount</td>
+                            <td>@item.WeightCode</td>
+                            <td>@item.TemplateWeightAsKg</td>
+                            <td>@item.KaviteCount</td>
+                            <td>@item.Order</td>
+                            <td data-text>
+                                <a href="javascript:void(0)" data-title="توضیحات قالب : @item.TemplateCode"
+                            data-body="@item.Explanation" onclick="viewModalAsText(this)">
+                                    <i class="bi"></i>
+                                </a>
+                            </td>
+                            <td data-change>
+                                <div>
+                                    <button type="button" data-title="ویرایش قالب : @item.TemplateCode" data-edit
+                                data-url='@Url.Page("","Edit",new {eid=@item.Id})' onclick="ajaxLoadPartialForm(this)">
+                                        <i class="bi"></i>
+                                    </button>
+                                    <form onsubmit="return confirm('آیا از حذف قالب @item.TemplateCode مطمئن هستید؟')"
+                                asp-page-handler="remove">
+                                        <input type="hidden" value="@item.Id" name="pinfoid">
+                                        <button type="submit" data-trash>
+                                            <i class="bi"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="11">
+                                <table class="table nested-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>قطعه</th>
+                                            <th>وزن قطعه (kg)</th>
+                                            <th>تعداد قطعه</th>
+                                            <th>تعداد قالب</th>
+                                            <th>مجموع (kg) -
+                                                @((item.Products.Sum(x=>x.TotalProductWeightAsKg)).GetValueAsTwoPoint())
+                                                کیلوگرم
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var child in item.Products)
+                                        {
+                                            <tr>
+                                                <td>@child.ProductId</td>
+                                                <td data-null>@child.ProductTitle</td>
+                                                <td data-null>@child.ProductWeightAsKg</td>
+                                                <td data-null>@child.ProductCount</td>
+                                                <td data-null>@item.TemplateCount</td>
+                                                <td data-null>@child.TotalProductWeightAsKg.GetValueAsTwoPoint()</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

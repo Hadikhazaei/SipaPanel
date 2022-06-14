@@ -1,0 +1,24 @@
+@model ScheduleModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="Year" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Year" class="form-control">
+            </div>
+            <span asp-validation-for="Year"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="Interval" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Interval" class="form-control">
+            </div>
+            <span asp-validation-for="Interval"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

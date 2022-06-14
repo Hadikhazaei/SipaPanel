@@ -1,0 +1,33 @@
+@model IndexModel.InputProductModel
+
+@if (!Model.IsAvailabel)
+{
+    <div class="alert alert-warning" role="alert">
+        <p class="mb-0 fw-bold">@Model.Message</p>
+    </div>
+}
+else
+{
+    <form method="post" asp-page="" asp-page-handler="Product">
+        <div class="row">
+            <div class="col-6">
+                <label asp-for="ProductId" class="col-form-label"></label>
+                <div class="col">
+                    <select class="form-select" asp-for="ProductId" asp-items="@Model.Products"></select>
+                </div>
+                <span asp-validation-for="ProductId"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="Count" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="Count" class="form-control">
+                </div>
+                <span asp-validation-for="Count"></span>
+            </div>
+        </div>
+        <div class="my-2">
+            <input type="hidden" asp-for="TemplateId">
+            <button type="submit" class="btn btn-outline-dark">ثبت</button>
+        </div>
+    </form>
+}

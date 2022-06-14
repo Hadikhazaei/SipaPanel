@@ -1,0 +1,94 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="asideDash">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDash" aria-expanded="false" aria-controls="collapseDash">
+            <span class="icon-btn">
+                <i class="bi bi-diagram-3"></i>
+            </span>
+            گزارشات
+        </button>
+    </h2>
+    <div id="collapseDash" class="accordion-collapse collapse" aria-labelledby="asideDash"
+        data-bs-parent="#accordionAside">
+        <div class="accordion-body">
+            <ul class="list-group list-group-flush">
+                <!-- Dashboard -->
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Index">داشبورد</a>
+                </li>
+
+                <!-- Report -->
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Reports/PrStopReport">
+                        گزارش تولید توقف - (روزانه)
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Reports/PrPlanningReport">
+                        گزارش برنامه تولید - (به تفکیک خط)
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Reports/MYReport">
+                        گزارش برنامه - تولید - (ماهانه - سالانه)
+                    </a>
+                </li>
+
+                <!-- Chart -->
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Charts/StopChart">
+                        نمودار توقفات - (به تفکیک سالن)
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Charts/PlanningChart">
+                        نمودار برنامه تولید - (به تفکیک خط)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="asideBase">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseBase" aria-expanded="false" aria-controls="collapseBase">
+            <span class="icon-btn">
+                <i class="bi bi-info-circle"></i>
+            </span>
+            اطلاعات
+        </button>
+    </h2>
+    <div id="collapseBase" class="accordion-collapse collapse" aria-labelledby="asideBase"
+        data-bs-parent="#accordionAside">
+        <div class="accordion-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Hall/Index">سالن/خط</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Fusion/Index">ذوب</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Product/Index">قطعات</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Template/Index">قالب ها</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Defect/Index">عیوب</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Schedule/Index">شیفت ها</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/User/Index">کاربران</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" asp-area="Co" asp-page="/Karset/Index">کارست</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <environment include="Development,Production">
+        <link rel="stylesheet" href="~/libs/pikaday/pikaday.css" />
+        <link rel="stylesheet" href="~/libs/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="~/libs/notify/notify.css" />
+        <link rel="stylesheet" href="~/panel/mycss/app.css" />
+
+        <!-- link -->
+        <link rel="stylesheet" href="~/libs/fonts/bootstrap-icons/css.css" />
+        <link rel="stylesheet" href="~/libs/fonts/iran-yekan/iran-yekan.css" />
+    </environment>
+    <link rel="icon" type="image/png" href="~/favicon.png" />
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="ploading">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+
+    <!-- view modal -->
+    <div class="modal fade" id="viewModal" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-justify">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- create modal -->
+    <div class="modal fade" id="createModal" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="dataCreate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <partial name="_Navbar" />
+
+    <main class="container-fluid">
+        <section class="row">
+            <partial name="_Aside" />
+            <div id="main-content" class="col-10">
+                @RenderBody()
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="container-fluid">
+        <p class="copy-right">
+            داشبورد مالیبل سایپا
+        </p>
+    </footer>
+
+    <environment include="Development,Production">
+        <script src="~/libs/bootstrap/popper.js"></script>
+        <script src="~/libs/bootstrap/bootstrap.js"></script>
+
+        <script src="~/libs/jquery/jquery.js"></script>
+        <script src="~/libs/jquery/jquery-validation.js"></script>
+        <script src="~/libs/jquery/validate-unobtrusive.js"></script>
+        <script src="~/libs/jquery/unobtrusive-ajax.js"></script>
+
+        <script src="~/libs/notify/notify.js"></script>
+
+        <!-- Scripts -->
+        <script src="~/panel/myjs/myJs.js" asp-append-version="true"></script>
+        <script src="~/panel/myjs/ajxJs.js" asp-append-version="true"></script>
+        <script src="~/panel/myjs/chart.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </environment>
+</body>
+
+</html>

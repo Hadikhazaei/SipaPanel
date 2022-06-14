@@ -1,0 +1,59 @@
+﻿@page
+@model ZyPanel.Areas.Production.Pages.ToDo.IndexModel
+@{
+    ViewBag.Title = "todo produce";
+}
+
+<div class="table-container my-4">
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>عنوان</th>
+                    <th>خط</th>
+                    <th>شیفت</th>
+                    <th>ایجاد</th>
+                    <th>شروع</th>
+                    <th>پایان</th>
+                    <th>تعداد روز</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr class='@(item.CanProducing ? "table-success" : null)'>
+                            <td>@item.Id</td>
+                            <td>@item.Title</td>
+                            <td>@item.HallTitle</td>
+                            <td>@item.ScheduleTitle</td>
+                            <td class="ltr">@item.CreatedDate</td>
+                            <td>@item.BeginDate</td>
+                            <td>@item.FinishDate</td>
+                            <td>@item.ConsideredDays</td>
+                            <td data-change>
+                                <div>
+                                    <a asp-area="Production" asp-page="/ToStop/Index" asp-route-id="@item.Id" data-more
+                                target="_blank">
+                                        توقفات
+                                    </a>
+                                    <a asp-area="Production" asp-page="/ToMake/Index" asp-route-id="@item.Id" data-more>
+                                        ادامه
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>

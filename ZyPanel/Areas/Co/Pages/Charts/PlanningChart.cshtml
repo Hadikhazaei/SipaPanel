@@ -1,0 +1,78 @@
+﻿@page
+@model ZyPanel.Areas.Co.Pages.Charts.PlanningChartModel
+@{
+    var title = "تولید - تناژ مصرفی";
+    ViewBag.Title = title;
+}
+<div class="card my-3">
+    <div class="card-header">
+        @title - @Model.Year
+    </div>
+    <div class="card-body">
+        <form asp-page="" method="get" class="container-fluid">
+            <select asp-for="Year">
+                @for (var i = Model.StartYear; i <= Model.CurrentYear; i++)
+                {
+                    var selected = Model.Year == i;
+                    <option value="@i" selected="@selected">@i</option>
+                }
+            </select>
+            <select asp-for="Month">
+                @for (var i = 1; i <= 12; i++)
+                {
+                    var selected = Model.Month == i;
+                    <option value="@i" selected="@selected">@i.GetPersianMonthName()</option>
+                }
+            </select>
+            <select asp-for="LineId" asp-items="@Model.Lines"></select>
+            <button type="submit" class="btn btn-outline-dark">جستجو</button>
+        </form>
+        <div class="container" data-line-chart>
+            <div id="yearlyChartContainer" data-title data-y-title="تناژ"></div>
+            <div id="monthlyChartContainer" data-title data-y-title="تناژ"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_AnyChart" />
+
+<script>
+    function drawYearlyChart() {
+        let id = "yearlyChartContainer";
+        let lineTitle = selectedOptText(document.getElementById("LineId"));
+        document.getElementById(id).setAttribute("data-title", `${lineTitle} - @Model.Year`);
+        let chartData = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.YearlyData)));
+        drawLineChart(document.getElementById(id), chartData);
+    }
+
+    function drawMonthlyChart() {
+        let id = "monthlyChartContainer";
+        let monthTitle = selectedOptText(document.getElementById("Month"));
+        document.getElementById(id).setAttribute("data-title", `${monthTitle} - @Model.Year`);
+        let chartData = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.MonthlyData)));
+        drawLineChart(document.getElementById(id), chartData);
+    }
+    drawYearlyChart();
+    drawMonthlyChart();
+</script>
+}
+
+<style>
+    .mychart {
+        margin: 0 1.5rem;
+        min-height: 600px;
+    }
+
+    #yearlyChartContainer,
+    #monthlyChartContainer {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .anychart-credits {
+        display: none !important;
+    }
+</style>

@@ -1,0 +1,78 @@
+@model WeightModel.InputModel
+
+@if (!Model.IsReady)
+{
+    <div class="alert alert-warning" role="alert">
+        <p class="mb-0 fw-bold">@Model.Message</p>
+    </div>
+}
+else
+{
+    <form method="post" asp-page="">
+        <div class="row">
+            <div class="col-6">
+                <label asp-for="WeightDate" class="col-form-label"></label>
+                <div data-picker>
+                    <div class="col" data-date>
+                        <input asp-for="WeightDate" class="form-control" readonly>
+                        <button type="button" data-trigger>
+                            <i class="bi select-date"></i>
+                            <i class="bi reset-date"></i>
+                        </button>
+                    </div>
+                    <span asp-validation-for="WeightDate"></span>
+                    <div data-container></div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <label asp-for="TemplateWeight" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="TemplateWeight" class="form-control">
+                </div>
+                <span asp-validation-for="TemplateWeight"></span>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-4">
+                <label asp-for="ProductionCycle" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="ProductionCycle" class="form-control ltr">
+                </div>
+                <span asp-validation-for="ProductionCycle"></span>
+            </div>
+
+            <div class="col-4">
+                <label asp-for="ManualFusionTime" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="ManualFusionTime" class="form-control ltr">
+                </div>
+                <span asp-validation-for="ManualFusionTime"></span>
+            </div>
+
+            <div class="col-4">
+                <label asp-for="PoringFusionTime" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="PoringFusionTime" class="form-control ltr">
+                </div>
+                <span asp-validation-for="PoringFusionTime"></span>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            @for (int i = 0; i < Model.Products.Count; i++)
+            {
+                <div class="col-4">
+                    <input type="hidden" asp-for="@Model.Products[i].ProductId">
+                    <label class="col-form-label">@Model.Products[i].ProductTitle</label>
+                    <input asp-for="@Model.Products[i].ProductEntry" class="form-control">
+                </div>
+            }
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-outline-dark">ثبت</button>
+        </div>
+    </form>
+}

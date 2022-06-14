@@ -1,0 +1,50 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="KarsetType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="KarsetType" asp-items="Html.GetEnumSelectList<KarsetType>()">
+                    <option value="">--انتخاب کنید--</option>
+                </select>
+            </div>
+            <span asp-validation-for="KarsetType"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="PersianCreatDate" class="col-form-label"></label>
+            <div data-picker>
+                <div class="col" data-date>
+                    <input asp-for="PersianCreatDate" class="form-control" readonly>
+                    <button type="button" data-trigger>
+                        <i class="bi select-date"></i>
+                        <i class="bi reset-date"></i>
+                    </button>
+                </div>
+                <div data-container></div>
+            </div>
+            <span asp-validation-for="PersianCreatDate"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="ProductTonnage" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="ProductTonnage" class="form-control rtl">
+            </div>
+            <span asp-validation-for="ProductTonnage"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="PlanningTonnage" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="PlanningTonnage" class="form-control rtl">
+            </div>
+            <span asp-validation-for="PlanningTonnage"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

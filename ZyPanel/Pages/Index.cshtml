@@ -1,0 +1,85 @@
+@page
+@model ZyPanel.Pages.IndexModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <environment include="Development,Production">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="~/libs/bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="~/panel/mycss/login.css" />
+        <link rel="stylesheet" href="~/libs/fonts/iran-yekan/iran-yekan.css" />
+        <link rel="stylesheet" href="~/libs/fonts/line-awesome/line-awesome.css" />
+    </environment>
+    <style>
+        body {
+            background-image: url("panel/img/Final02_B01.png");
+            background-position-x: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="~/panel/img/Final02_B02_01.png" class="img-back" />
+        <div class="row justify-content">
+            <div class="col-md-5 border">
+                <form method="post" class="login-form">
+                    <div class="d-flex">
+                        <img src="~/panel/img/MalleableLOGO03.png" class="img-logo" />
+                        <h4 class="title">داشبورد مدیریتی تولید</h4>
+                    </div>
+                    <img src="~/panel/img/1400-LOGO.png" class="img" />
+                    <div class="col-md-12">
+                        <div class="input-group login">
+                            <span class="icon-inp" id="basic-addon1">
+                                <i class="las la-user-alt"></i>
+                            </span>
+                            <input asp-for="Input.UserName" class="form-control input-login" placeholder="">
+                            <span class="highlight"></span>
+                            <label asp-for="Input.UserName" class="lbl-login"></label>
+                            <div asp-validation-for="Input.UserName" class="invalid-feedback"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <div class="input-group login">
+                            <span class="icon-inp" id="basic-addon1"><i class="las la-lock"></i></span>
+                            <input asp-for="Input.Password" class="form-control input-login" placeholder="">
+                            <span class="highlight"></span>
+                            <div asp-validation-for="Input.Password" class="invalid-feedback"></div>
+                            <label asp-for="Input.Password" class="lbl-login"></label>
+                        </div>
+                    </div>
+
+                    @* <div class="row my-3">
+                        <div class="col">
+                        <input class="form-check-input" asp-for="Input.RememberMe">
+                        <label class="form-check-label" asp-for="Input.RememberMe"></label>
+                        </div>
+                        </div> *@
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-dark float-end btn-login">ورود</button>
+                    </div>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <environment include="Development,Production">
+        <!-- bootstrap -->
+        <script src="~/libs/bootstrap/popper.js"></script>
+        <script src="~/libs/bootstrap/bootstrap.js"></script>
+        <!-- jquery -->
+        <script src="~/libs/jquery/jquery.js"></script>
+        <script src="~/libs/jquery/jquery-validation.js"></script>
+        <script src="~/libs/jquery/validate-unobtrusive.js"></script>
+    </environment>
+</body>
+
+</html>

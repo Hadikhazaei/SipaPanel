@@ -1,0 +1,146 @@
+﻿@page
+@model ZyPanel.Areas.Co.Pages.Reports.MYReportModel
+@{
+    var title = "برنامه - تولید - (ماهانه - سالانه)";
+    ViewBag.Title = title;
+}
+<div class="card my-3">
+    <div class="card-header">
+        @title
+    </div>
+    <div class="card-body">
+        <form asp-page="" method="get">
+            <div class="row">
+                <div class="col-3 entry-date">
+                    <div data-picker>
+                        <label for="date" class="col-form-label"></label>
+                        <div class="col" data-date>
+                            <input type="text" value='@Request.Query["date"]' name="date" class="form-control" readonly>
+                            <button type="button" data-trigger>
+                                <i class="bi select-date"></i>
+                                <i class="bi reset-date"></i>
+                            </button>
+                        </div>
+                        <div data-container></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-dark">جستجو</button>
+                </div>
+            </div>
+        </form>
+        <div class="container my-3">
+            <div class="row align-items-start">
+                <ul class="nav nav-tabs" id="myHallsTab" role="tablist">
+                    @foreach (var item in Model.StopInfoList)
+                    {
+                        var tabName = $"hall-{item.HallId}";
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="@tabName-tab" data-bs-toggle="tab" data-bs-target="#@tabName"
+                            type="button" role="tab" aria-controls="@tabName"
+                            aria-selected="true">@item.HallTitle</button>
+                        </li>
+                    }
+                </ul>
+                <div class="tab-content my-3" id="myHallsContent">
+                    @foreach (var hall in Model.StopInfoList)
+                    {
+                        var tabName = $"hall-{hall.HallId}";
+                        <div class="tab-pane fade table-container" id="@tabName" role="tabpanel"
+                        aria-labelledby="@tabName-tab">
+                            @* StopInfo *@
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>خط</th>
+                                                        <th>وضعیت</th>
+                                                        <th>
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th colspan="3">ماهانه</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>هدف</th>
+                                                                        <th>عملکرد</th>
+                                                                        <th>انحراف(m)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </th>
+                                                        <th>
+                                                            <table class="table table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th colspan="3">سالانه</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>هدف</th>
+                                                                        <th>عملکرد</th>
+                                                                        <th>انحراف(m)</th>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var line in hall.Lines)
+                                                    {
+                                                        <tr>
+                                                            <td>@line.LineTitle</td>
+                                                            <td>@line.IsWorking</td>
+                                                            <td>
+                                                                <table class="table table-bordered">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>@line.MonthLy.Target</th>
+                                                                            <th>@line.MonthLy.Performance</th>
+                                                                            <th class="ltr">@line.MonthLy.Tolerance</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+
+                                                            <td>
+                                                                <table class="table table-bordered">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th>@line.YearLy.Target</th>
+                                                                            <th>@line.YearLy.Performance</th>
+                                                                            <th class="ltr">@line.YearLy.Tolerance</th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+
+<script>
+    datePicker(document.querySelector(".entry-date"));
+    document.querySelector("#myHallsTab li:first-child button")
+        .classList.add("active");
+    document.querySelector("#myHallsContent div:first-child")
+        .classList.add("show", "active");
+</script>
+}

@@ -1,0 +1,35 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="Title" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="Title" class="form-control">
+            </div>
+            <span asp-validation-for="Title"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="DefectType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="DefectType" asp-items="Html.GetEnumSelectList<DefectType>()">
+                    <option value="">--انتخاب کنید--</option>
+                </select>
+            </div>
+            <span asp-validation-for="DefectType"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="DefectLineType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="DefectLineType"
+                    asp-items="Html.GetEnumSelectList<DefectLineType>()"></select>
+            </div>
+            <span asp-validation-for="DefectLineType"></span>
+        </div>
+    </div>
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

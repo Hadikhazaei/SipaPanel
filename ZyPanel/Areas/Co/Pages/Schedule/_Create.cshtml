@@ -1,0 +1,45 @@
+@model IndexModel.InputModel
+
+<form asp-page="">
+    <h6 style="font-weight: bold;">از : </h6>
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="BeginHour" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="BeginHour" class="form-control">
+            </div>
+            <span asp-validation-for="BeginHour"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="BeginMinute" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="BeginMinute" class="form-control">
+            </div>
+            <span asp-validation-for="BeginMinute"></span>
+        </div>
+    </div>
+
+    <br>
+    <h6 style="font-weight: bold;">تا : </h6>
+    <div class="row">
+        <div class="col-6">
+            <label asp-for="FinishHour" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="FinishHour" class="form-control">
+            </div>
+            <span asp-validation-for="FinishHour"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="FinishMinute" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="FinishMinute" class="form-control">
+            </div>
+            <span asp-validation-for="FinishMinute"></span>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <input type="hidden" asp-for="Id">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

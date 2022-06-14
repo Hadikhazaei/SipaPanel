@@ -1,0 +1,103 @@
+/*
+===================================
+Contracts.
+===================================
+*/
+$body-bg-color:#f0f0f0;
+$selection-color : white;
+$selection-bg-color : #0d0053;
+/*
+===================================
+contracts.
+===================================
+*/
+
+*,
+body {
+    // direction: rtl;
+    font-family: iran-yekan !important;
+
+    // firefox scrollbar
+    scrollbar-width: thin;
+
+    // chrome scrollbar
+    &::-webkit-scrollbar {
+        width: .5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $web-color-1;
+    }
+}
+
+
+body {
+    // background-color: $body-bg-color;
+}
+
+p {
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+table caption {
+    caption-side: top !important;
+}
+
+input[type="number"] {
+    direction: ltr !important;
+
+    &::placeholder {
+        padding-right: .1rem;
+        text-align: right !important;
+    }
+}
+
+
+::selection {
+    color: $selection-color;
+    background-color: $selection-bg-color;
+}
+
+.rtl {
+    direction: rtl !important;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+.radius-none {
+    border-radius: 0 !important;
+}
+
+.fs-sm {
+    font-size: $web-sm-font-size;
+}
+
+// form
+input,
+button,
+select,
+.all-event-shadow-none {
+    @include hover-focus-active-visited {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+select,
+input:not([type=radio]) {
+    border-radius: .2rem;
+    padding: .5rem .75rem !important;
+}
+
+.no-data{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #c5c5c582;
+}

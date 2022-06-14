@@ -1,0 +1,56 @@
+﻿@page "{id}"
+@model ZyPanel.Areas.Co.Pages.Template.AssignLineModel
+@{
+    ViewBag.Title = "انتساب خط";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن خط" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>خط</th>
+                    <th>قالب</th>
+                    @* <th>عملیات</th> *@
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.HallTitle</td>
+                            <td>@item.TemplateCode</td>
+                            @* <td data-change>
+                                <div>
+                                <form onsubmit="return confirm('مطمئن هستید؟')" asp-page-handler="remove">
+                                <input type="hidden" value="@item.Id" name="hallId">
+                                <button type="submit" data-trash>
+                                <i class="bi"></i>
+                                </button>
+                                </form>
+                                </div>
+                                </td> *@
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

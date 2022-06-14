@@ -1,0 +1,86 @@
+@model IndexModel.InputModel
+
+@if (!Model.CanEdit)
+{
+    <div class="alert alert-warning" role="alert">
+        <p class="mb-0 fw-bold">امکان ویرایش برنامه در حال حاضر مقدور نمی باشد.</p>
+    </div>
+}
+else
+{
+    <form asp-page="">
+        <div class="col-12 my-2">
+            @foreach (var c in Enum.GetValues(typeof(ScheduleType)))
+            {
+                var type = (ScheduleType)c;
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="ScheduleType" value="@((byte)c)"
+                checked="@(type == Model?.ScheduleType)">
+                    <label class="form-check-label" asp-for="ScheduleType">@(EnumExtensions.GetDisplayName (type))</label>
+                </div>
+            }
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label asp-for="Title" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="Title" class="form-control">
+                </div>
+                <span asp-validation-for="Title"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <label asp-for="TblHallId" class="col-form-label"></label>
+                <div class="col">
+                    <select class="form-select" asp-for="TblHallId" asp-items="Model.Halls"></select>
+                </div>
+                <span asp-validation-for="TblHallId"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="SchdeduleCount" class="col-form-label"></label>
+                <div class="col">
+                    <input asp-for="SchdeduleCount" class="form-control">
+                </div>
+                <span asp-validation-for="SchdeduleCount"></span>
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="col-6">
+                <label asp-for="PersianBeginDate" class="col-form-label"></label>
+                <div data-picker>
+                    <div class="col" data-date>
+                        <input asp-for="PersianBeginDate" class="form-control" readonly>
+                        <button type="button" data-trigger>
+                            <i class="bi select-date"></i>
+                            <i class="bi reset-date"></i>
+                        </button>
+                    </div>
+                    <div data-container></div>
+                </div>
+                <span asp-validation-for="PersianBeginDate"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="PersianFinishDate" class="col-form-label"></label>
+                <div data-picker>
+                    <div class="col" data-date>
+                        <input asp-for="PersianFinishDate" class="form-control" readonly>
+                        <button type="button" data-trigger>
+                            <i class="bi select-date"></i>
+                            <i class="bi reset-date"></i>
+                        </button>
+                    </div>
+                    <div data-container></div>
+                </div>
+                <span asp-validation-for="PersianFinishDate"></span>
+            </div>
+        </div>
+
+        <div class="my-2">
+            <button type="submit" class="btn btn-outline-dark">ثبت</button>
+        </div>
+    </form>
+}

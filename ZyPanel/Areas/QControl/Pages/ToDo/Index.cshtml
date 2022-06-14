@@ -1,0 +1,84 @@
+﻿@page
+@model ZyPanel.Areas.QControl.Pages.ToDo.IndexModel
+@{
+    ViewBag.Title = "todo qcontrol";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        <button class="btn btn-outline-dark" data-title="افزودن" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+            افزودن
+        </button>
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>ایجاد</th>
+                    <th>قطعه</th>
+                    <th>تولید</th>
+                    <th>ضایع</th>
+                    <th>مرجوعی</th>
+                    <th>بازرس</th>
+                    <th>ایستگاه بازرسی</th>
+                    <th>توضیحات</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.PersianCreateDate</td>
+                            <td>@item.Product</td>
+                            <td>@item.PersianProductionDate</td>
+                            <td data-jx>
+                                <button data-url='@Url.Page("","IncreaseWaste",new{id=@item.Id})' type="button"
+                            class="btn btn-secondary btn-sm px-3" onclick="ajaxDataChange(this)">+</button>
+                                <span class="badge bg-light text-dark fw-bold" data-content>@item.WasteCount</span>
+                                <button data-url='@Url.Page("","DecreaseWaste",new{id=@item.Id})' type="button"
+                            class="btn btn-danger btn-sm px-3" onclick="ajaxDataChange(this)">-</button>
+                            </td>
+                            <td>@item.BackCount</td>
+                            <td>@item.Inspecter</td>
+                            <td>@item.StationTitle</td>
+                            <td data-text>
+                                <a href="javascript:void(0)" data-title="توضیحات" data-body="@item.Explanation"
+                            onclick="viewModalAsText(this)">
+                                    <i class="bi"></i>
+                                </a>
+                            </td>
+                            <td data-change>
+                                <div>
+                                    <a asp-area="QControl" asp-page="/ToDoInfo/Index" asp-route-id="@item.Id" data-more>
+                                        عیوب
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+        <partial name="_Pagination" model='(Model.List.TotalPages)' />
+    </div>
+</div>
+
+@section Scripts{
+<partial name="_Date" />
+<script>
+    setModalLG();
+</script>
+}

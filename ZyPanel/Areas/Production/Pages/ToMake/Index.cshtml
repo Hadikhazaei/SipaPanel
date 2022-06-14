@@ -1,0 +1,89 @@
+﻿@page "{Id}"
+@model ZyPanel.Areas.Production.Pages.ToMake.IndexModel
+@{
+    ViewBag.Title = "todo produce make";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="table-container">
+    <div class="table-container-header">
+        @if (!Model.IsStopped && Model.CanCreate)
+        {
+            <button class="btn btn-outline-dark" data-title="افزودن" data-url='@createUrl'
+            onclick='ajaxLoadPartialForm(this)'>
+                افزودن
+            </button>
+        }
+        else if (!Model.CanCreate)
+        {
+            <div class="alert alert-warning w-100" role="alert">
+                امکان افزودن مقدور نمی باشد.
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning w-100" role="alert">
+                به دلیل توقف خط امکان افزودن مقدور نمی باشد.
+            </div>
+        }
+    </div>
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <vc:planning-info pid="@Model.Id"></vc:planning-info>
+            <thead>
+                <tr>
+                    <th>کد قالب</th>
+                    <th>کد وزن کشی</th>
+                    <th>تناژ قالب (kg)</th>
+                    <th>تناژ قطعه (kg)</th>
+                    <th>ضایعات (kg)</th>
+                    <th>گرفته شده</th>
+                    <th>بارریزی شده</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        int wasteCount = item.TakeCount - item.PutCount;
+                        <tr>
+                            <td>@item.TemplateCode</td>
+                            <td>@item.WeightCode</td>
+                            <td>
+                                خالص : @((item.TemplateWeightAsKg * item.PutCount).GetValueAsTwoPoint())
+                                -
+                                ضایع : @((item.TemplateWeightAsKg * wasteCount).GetValueAsTwoPoint())
+                            </td>
+                            <td>
+                                خالص : @((item.ProductWeightAsKg * item.PutCount).GetValueAsTwoPoint())
+                                -
+                                ضایع : @((item.ProductWeightAsKg * wasteCount).GetValueAsTwoPoint())
+                            </td>
+                            <td>
+                                @(((item.TemplateWeightAsKg *
+                        wasteCount)+(item.ProductWeightAsKg*wasteCount)).GetValueAsTwoPoint())
+                            </td>
+                            <td>@item.TakeCount</td>
+                            <td>@item.PutCount</td>
+                            <td data-change>
+                                <a asp-area="Production" asp-page="/ToMake/Info" asp-route-id="@Model.Id"
+                            asp-route-weightcode="@item.WeightCode" asp-route-templatecode="@item.TemplateCode"
+                            data-more>
+                                    جزعیات
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

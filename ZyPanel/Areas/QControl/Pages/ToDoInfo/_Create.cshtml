@@ -1,0 +1,70 @@
+@model IndexModel.InputModel
+<form asp-page="">
+    <div class="row">
+        <div class="form-check">
+            <input class="form-check-input" asp-for="IsWaste">
+            <label class="form-check-label mx-2" asp-for="IsWaste"></label>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-6">
+            <label asp-for="TblDefectId" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="TblDefectId" asp-items="Model.Defects"></select>
+            </div>
+            <span asp-validation-for="TblDefectId"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="DefectPlaceType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="DefectPlaceType"
+                    asp-items="Html.GetEnumSelectList<DefectPlaceType>()"></select>
+            </div>
+            <span asp-validation-for="DefectPlaceType"></span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="StationType" class="col-form-label"></label>
+            <div class="col">
+                <select class="form-select" asp-for="StationType"
+                    asp-items="Html.GetEnumSelectList<StationType>()"></select>
+            </div>
+            <span asp-validation-for="StationType"></span>
+        </div>
+    </div>
+
+    <!-- TrackCode, ShieldType -->
+    <div class="row my-3">
+        <div class="col-6">
+            <label asp-for="TrackCode" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="TrackCode" class="form-control">
+            </div>
+            <span asp-validation-for="TrackCode"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="ShieldType" class="col-form-label"></label>
+            <div class="col">
+                <input asp-for="ShieldType" class="form-control">
+            </div>
+            <span asp-validation-for="ShieldType"></span>
+        </div>
+    </div>
+
+    <!-- Explanation -->
+    <div class="row">
+        <div class="col-12">
+            <label asp-for="Explanation" class="col-form-label"></label>
+            <div class="col-sm-12">
+                <textarea asp-for="Explanation" class="form-control"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <button type="submit" class="btn btn-outline-dark">ثبت</button>
+    </div>
+</form>

@@ -1,0 +1,76 @@
+﻿@page "{Id}/{weightcode}/{templatecode}"
+@model ZyPanel.Areas.Production.Pages.ToMake.InfoModel
+@{
+    ViewBag.Title = "todo produce make";
+    var createUrl = Url.Page("", "Create");
+}
+
+<partial name="_Alert" model="Model.Alert" />
+
+<div class="my-3">
+    <div class="btn-group" role="group">
+        @foreach (var item in Model.ProductList)
+        {
+            <button type="button" class="btn btn-outline-primary">
+                @item.Key - @item.Value کیلوگرم
+            </button>
+        }
+    </div>
+</div>
+<div class="table-container">
+    <div class="table-responsive" id="dataList">
+        <table class="table table-bordered">
+            <vc:planning-info pid="@Model.Id"></vc:planning-info>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>کاربر</th>
+                    <th>تاریخ</th>
+                    <th>شیفت</th>
+                    <th>نوع شارژ</th>
+                    <th>گرفته شده</th>
+                    <th>بارریزی</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.List.Any())
+                {
+                    foreach (var item in Model.List)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.UserId</td>
+                            <td class="ltr">@item.DateCreate</td>
+                            <td>@item.Schedule</td>
+                            <td>@item.ChargeType</td>
+                            <td>@item.TakeCount</td>
+                            <td>@item.PutCount</td>
+                            <td data-change>
+                                @if ((DateTime.Now - item.CreatedDate).TotalHours < 1)
+                                {
+                                    <div>
+                                        <form onsubmit="return confirm('مطمئن هستید؟')" asp-page-handler="remove">
+                                            <input type="hidden" value="@item.Id" name="id">
+                                            <button type="submit" data-trash>
+                                                <i class="bi"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <b>---</b>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr data-span></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
